@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8157e11d-e714-4868-9599-5c1a34ec3151
+  default_langcode: hu
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: project-aak.jpg
+  uri:
+    -
+      value: 'public://project-aak.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 10819414
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1778138351

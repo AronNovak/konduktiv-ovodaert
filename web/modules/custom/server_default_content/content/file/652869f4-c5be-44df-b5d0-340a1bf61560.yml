@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 652869f4-c5be-44df-b5d0-340a1bf61560
+  default_langcode: hu
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: project-horgasz.jpg
+  uri:
+    -
+      value: 'public://project-horgasz.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11170
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1778138351

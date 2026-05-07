@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2d3055d0-60d8-49ab-8663-cf6e54d8f798
+  default_langcode: hu
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: project-1percent.jpg
+  uri:
+    -
+      value: 'public://project-1percent.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 294241
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1778138351

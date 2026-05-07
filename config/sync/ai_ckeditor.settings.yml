@@ -1,7 +1,13 @@
 _core:
   default_config_hash: 2xvTnAFagtSdmE-GLvKO4EwssCJHk6BSGpXhGko58jM
+langcode: hu
 prompts:
   complete: ''
+  modify_prompt: |-
+    Use the following instructions to process this text. Return only the processed text without explanations.
+    Instructions: {{ modify_prompt }}
+
+    Text to process:
   reformat: |
     Please fix this text to be marked up with semantic HTML using only lists, headers, or paragraph tags:
   spellfix: |
@@ -18,8 +24,3 @@ prompts:
     Change the tone of the following text to be {{ tone }} using the same language as the following text.
   translate: |
     Translate the following text into {{ lang }}
-  modify_prompt: |-
-    Use the following instructions to process this text. Return only the processed text without explanations.
-    Instructions: {{ modify_prompt }}
-
-    Text to process:

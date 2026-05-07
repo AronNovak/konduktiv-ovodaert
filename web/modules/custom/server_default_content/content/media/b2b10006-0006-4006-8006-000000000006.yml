@@ -1,0 +1,86 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b2b10006-0006-4006-8006-000000000006
+  bundle: image
+  default_langcode: hu
+  depends:
+    ff97932b-d80f-43cd-96b1-7868e5db6875: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Rehabilitációs gyermekkocsi'
+  created:
+    -
+      value: 1778138385
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Konduktív Óvodáért Alapítvány'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'This is the Drupal Starter project.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/hu/node/4'
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/hu'
+        group: schema_organization
+        schema_metatag: true
+  path:
+    -
+      alias: ''
+      langcode: hu
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_media_image:
+    -
+      entity: ff97932b-d80f-43cd-96b1-7868e5db6875
+      alt: 'Rehabilitációs gyermekkocsi'
+      title: 'Rehabilitációs gyermekkocsi'
+      width: 2048
+      height: 1536

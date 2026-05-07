@@ -1,5 +1,5 @@
 uuid: fa948e1c-3081-460d-ae8b-d58c43645aee
-langcode: en
+langcode: hu
 status: true
 dependencies: {  }
 _core:
@@ -75,9 +75,9 @@ field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_hu.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -149,9 +149,9 @@ unstemmed_field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_hu.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -1034,8 +1034,6 @@ text_files:
     ők
     őket
     őt
-  synonyms: |
-    drupal, durpal
   protwords: |
 
   accents: |
@@ -1246,3 +1244,5 @@ text_files:
     "\u014D" => "o"
     # ū => u
     "\u016B" => "u"
+  synonyms: |
+    drupal, durpal

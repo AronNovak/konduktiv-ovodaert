@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 34773763-9c6b-4e7d-b70f-f9d250792f04
+  default_langcode: hu
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: project-ovis.jpg
+  uri:
+    -
+      value: 'public://project-ovis.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1714118
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1778138351

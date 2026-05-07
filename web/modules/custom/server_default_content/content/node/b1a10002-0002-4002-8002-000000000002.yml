@@ -1,0 +1,441 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1a10002-0002-4002-8002-000000000002
+  bundle: landing_page
+  default_langcode: hu
+default:
+  revision_uid:
+    -
+      target_id: 0
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  title:
+    -
+      value: Projektjeink
+  created:
+    -
+      value: 1778138385
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Projektjeink | Konduktív Óvodáért Alapítvány'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/projektjeink'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: Projektjeink
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: WebPage
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@id'
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/projektjeink'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: Projektjeink
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: breadcrumb
+        content:
+          '@type': BreadcrumbList
+          itemListElement:
+            -
+              '@type': ListItem
+              position: 1
+              name: Home
+              item: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of what this page covers.'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: publisher
+        content:
+          '@type': Organization
+          name: 'Konduktív Óvodáért Alapítvány'
+          url: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
+  path:
+    -
+      alias: /projektjeink
+      langcode: hu
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_is_title_hidden:
+    -
+      value: true
+  field_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6f2d2f11-0160-41cf-b77b-d25513039f03
+          bundle: text
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778138385
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_body:
+            -
+              value: '<p>Összegyűjtöttük azokat a kezdeményezéseket, amelyeken jelenleg dolgozunk. Mindegyikhez szívesen fogadunk önkéntest, eszközfelajánlást vagy pénzbeli támogatást.</p>'
+              format: basic_html
+          field_title:
+            -
+              value: Projektjeink
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 62406aba-ba9d-43b3-8ca7-54c313b77f7b
+          bundle: info_cards
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778138385
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_info_cards:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7874608b-ecd0-4b70-a99c-85943ba0ed0e
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_subtitle:
+                    -
+                      value: 'Adója 1%-át felajánlva közvetlenül segíti az óvodás gyermekek fejlesztését.'
+                  field_title:
+                    -
+                      value: '1% kampány'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b80cf857-97fb-4655-a28d-5b1f0c1736a2
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_subtitle:
+                    -
+                      value: 'Az óvodai csoportok napi munkájához szükséges eszközök és játékok beszerzése.'
+                  field_title:
+                    -
+                      value: 'Ovis csoportok támogatása'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3e399d4a-6141-444e-bc28-166645d9539a
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_subtitle:
+                    -
+                      value: 'A nehéz mozgással élő gyermekek számára biztosítunk rehabilitációs gyermekkocsit.'
+                  field_title:
+                    -
+                      value: 'Rehabilitációs gyermekkocsi'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 74c3fb94-dec2-461e-baa5-8feb39e3bc03
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_subtitle:
+                    -
+                      value: 'Otthoni fejlesztéshez kínálunk kölcsönözhető szenzoros és terápiás eszközöket.'
+                  field_title:
+                    -
+                      value: 'Szenzoros eszközkölcsönző'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: eb72e2bd-12fb-4395-a319-84a28982b531
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_subtitle:
+                    -
+                      value: 'Augmentatív és alternatív kommunikációs eszközök kölcsönzése a beszédfejlesztéshez.'
+                  field_title:
+                    -
+                      value: 'AAK eszközkölcsönző'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b3f56a02-00f1-4256-a133-cffdfe8baf52
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_subtitle:
+                    -
+                      value: 'Évente megrendezett családi esemény, ahol a horgászat egyúttal támogatás is.'
+                  field_title:
+                    -
+                      value: 'Jótékonysági horgászverseny'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 052fbdd3-7db5-44b3-a483-8bf25f9c8877
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_subtitle:
+                    -
+                      value: 'Hagyományos farsangi báljainkkal forrást teremtünk az óvoda fejlesztéséhez.'
+                  field_title:
+                    -
+                      value: 'Alapítványi Bál'
+          field_title:
+            -
+              value: 'A mi szuperhőseink'

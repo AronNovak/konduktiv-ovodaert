@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: c3c10002-0002-4002-8002-000000000002
+  bundle: menu_link_content
+  default_langcode: hu
+  depends:
+    b1a10002-0002-4002-8002-000000000002: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Projektjeink
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      target_uuid: b1a10002-0002-4002-8002-000000000002
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 1
+  expanded:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Konduktív Óvodáért Alapítvány'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'This is the Drupal Starter project.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/hu/node/4'
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/hu'
+        group: schema_organization
+        schema_metatag: true

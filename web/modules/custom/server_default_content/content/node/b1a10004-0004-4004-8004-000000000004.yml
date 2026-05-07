@@ -1,0 +1,500 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1a10004-0004-4004-8004-000000000004
+  bundle: landing_page
+  default_langcode: hu
+default:
+  revision_uid:
+    -
+      target_id: 0
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  title:
+    -
+      value: Támogatóink
+  created:
+    -
+      value: 1778138385
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Támogatóink | Konduktív Óvodáért Alapítvány'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/tamogatoink'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: Támogatóink
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: WebPage
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@id'
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/tamogatoink'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: Támogatóink
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: breadcrumb
+        content:
+          '@type': BreadcrumbList
+          itemListElement:
+            -
+              '@type': ListItem
+              position: 1
+              name: Home
+              item: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of what this page covers.'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: publisher
+        content:
+          '@type': Organization
+          name: 'Konduktív Óvodáért Alapítvány'
+          url: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
+  path:
+    -
+      alias: /tamogatoink
+      langcode: hu
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_is_title_hidden:
+    -
+      value: true
+  field_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5c828afd-c611-4c07-8527-999afe9ab444
+          bundle: text
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778142829
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_body:
+            -
+              value: '<p>Hálásak vagyunk minden partnerünknek és támogatónknak. Az alábbi szervezetek segítségével tudunk évről évre folyamatosan a gyermekekért dolgozni. Kattintson egy logóra, hogy többet megtudjon az adott szervezetről.</p>'
+              format: basic_html
+          field_title:
+            -
+              value: Támogatóink
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f5059c90-2a5f-4613-a0e6-826ba5c561d1
+          bundle: quick_links
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778142829
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_quick_link_items:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f8117424-1512-4627-8530-979ca1619ae9
+                  bundle: quick_link_item
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778142829
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_link:
+                    -
+                      uri: 'https://www.dorex.hu'
+                      title: DOREX
+                      options: {  }
+                  field_subtitle:
+                    -
+                      value: 'Játékok és óvodai eszközök'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9fdfbe42-7d1b-4f7b-9713-d3d98fbcbf50
+                  bundle: quick_link_item
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778142829
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_link:
+                    -
+                      uri: 'https://www.profilii.hu'
+                      title: 'Pro Filii Alapítvány'
+                      options: {  }
+                  field_subtitle:
+                    -
+                      value: 'Egészség és esélyegyenlőség'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e43dbfd1-8154-4e93-9036-e2cbffcd8ac4
+                  bundle: quick_link_item
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778142829
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_link:
+                    -
+                      uri: 'https://www.atomeromu.mvm.hu'
+                      title: 'MVM Paksi Atomerőmű Zrt.'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c25ece65-1e20-43fd-9de2-1e3ce03d586b
+                  bundle: quick_link_item
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778142829
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_link:
+                    -
+                      uri: 'https://mirigy.hu'
+                      title: 'Irigy Hónaljmirigy'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8cfbe5a0-780d-491d-b7ad-ffa642a8884d
+                  bundle: quick_link_item
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778142829
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_link:
+                    -
+                      uri: 'https://www.biotechusa.hu'
+                      title: 'BioTechUSA Kft.'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 252d4dff-a64c-45da-8c3f-5d433ab1c034
+                  bundle: quick_link_item
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778142829
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_link:
+                    -
+                      uri: 'https://www.tizproba.hu'
+                      title: 'Tízpróba Magyarország Kft.'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5fec1cce-9bdb-43ba-bf63-8ec3a86328ad
+                  bundle: quick_link_item
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778142829
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_link:
+                    -
+                      uri: 'https://nszi.hu'
+                      title: 'Slachta Margit Nemzeti Szociálpolitikai Intézet'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: aece28f8-fcc8-44e3-8914-c9f629033c89
+                  bundle: quick_link_item
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778142829
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_link:
+                    -
+                      uri: 'https://www.eon.hu'
+                      title: 'E.ON Hungária Zrt.'
+                      options: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a4b39ca1-481b-46d9-a0b7-05a615397d5c
+          bundle: text
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778142829
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_body:
+            -
+              value: '<p><strong>További támogatóink, akiknek külön köszönjük a segítségét:</strong> VIACOM, Préri Horgásztó.</p>'
+              format: basic_html

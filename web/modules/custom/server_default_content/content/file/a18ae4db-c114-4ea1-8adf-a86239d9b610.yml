@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a18ae4db-c114-4ea1-8adf-a86239d9b610
+  default_langcode: hu
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: project-szenzoros.jpg
+  uri:
+    -
+      value: 'public://project-szenzoros.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2445222
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1778138351

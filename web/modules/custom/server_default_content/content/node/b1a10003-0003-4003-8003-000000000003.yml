@@ -1,0 +1,391 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1a10003-0003-4003-8003-000000000003
+  bundle: landing_page
+  default_langcode: hu
+default:
+  revision_uid:
+    -
+      target_id: 0
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  title:
+    -
+      value: Támogatás
+  created:
+    -
+      value: 1778138385
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Támogatás | Konduktív Óvodáért Alapítvány'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/tamogatas'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: Támogatás
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: WebPage
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@id'
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/tamogatas'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: Támogatás
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: breadcrumb
+        content:
+          '@type': BreadcrumbList
+          itemListElement:
+            -
+              '@type': ListItem
+              position: 1
+              name: Home
+              item: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of what this page covers.'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: publisher
+        content:
+          '@type': Organization
+          name: 'Konduktív Óvodáért Alapítvány'
+          url: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
+  path:
+    -
+      alias: /tamogatas
+      langcode: hu
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_is_title_hidden:
+    -
+      value: true
+  field_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d15060cb-8429-4c91-91aa-49fd9635eda4
+          bundle: text
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778138385
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_body:
+            -
+              value: '<p>Minden forint, minden eszközfelajánlás és minden önkéntes óra számít. Az alábbi módokon tud segíteni nekünk.</p>'
+              format: basic_html
+          field_title:
+            -
+              value: 'Támogasson minket'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 096301b2-cfa8-476c-855e-cae11e98a400
+          bundle: info_cards
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778138385
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_info_cards:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6fcc58b6-152f-48a9-955d-34f8670c5866
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_info_card_header:
+                    -
+                      value: 1%
+                  field_subtitle:
+                    -
+                      value: 'Adószám: 18502992-1-13'
+                  field_title:
+                    -
+                      value: 'Adója 1%-a'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e7c3d197-9062-4683-8aef-0980d4b1e903
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_info_card_header:
+                    -
+                      value: OTP
+                  field_subtitle:
+                    -
+                      value: 'Számlaszám: 11702036-20716910'
+                  field_title:
+                    -
+                      value: 'Banki átutalás'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 994afc67-3b88-4f9e-89db-c5e4e716d905
+                  bundle: info_card
+                  default_langcode: hu
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1778138385
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_info_card_header:
+                    -
+                      value: IBAN
+                  field_subtitle:
+                    -
+                      value: 'HU08 1170 2036 2071 6910 0000 0000'
+                  field_title:
+                    -
+                      value: 'Nemzetközi átutalás'
+          field_title:
+            -
+              value: 'Hogyan segíthet?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ac1d69b9-ac08-424a-a54a-1b4e540d5d99
+          bundle: cta
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778138385
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_body:
+            -
+              value: 'Eszközfelajánlás, önkéntes munka vagy egyedi együttműködés ügyében írjon nekünk!'
+              format: basic_html
+          field_link:
+            -
+              uri: 'mailto:petoovialapitvany@gmail.com'
+              title: petoovialapitvany@gmail.com
+              options: {  }
+          field_title:
+            -
+              value: 'Más módon segítene?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d4d10001-0001-4001-8001-000000000001
+          bundle: text
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778140769
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_body:
+            -
+              value: '<p>A QR kódot bármelyik magyar mobilbanki alkalmazás kamerájával beolvasva a számlaszámunk azonnal kitöltődik az átutalási űrlapon. Az összeget Ön adja meg.</p><p style="text-align:center;"><img src="/themes/custom/server_theme/dist/images/qvik-qr.svg" alt="QR kód — Konduktív Óvodáért Alapítvány OTP-számla" width="280" height="280"></p>'
+              format: full_html
+          field_title:
+            -
+              value: 'QR kódos átutalás'

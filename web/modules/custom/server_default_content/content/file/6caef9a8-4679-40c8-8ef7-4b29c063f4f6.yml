@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6caef9a8-4679-40c8-8ef7-4b29c063f4f6
+  default_langcode: hu
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: logo-foundation.png
+  uri:
+    -
+      value: 'public://logo-foundation.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 40985
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1778138351

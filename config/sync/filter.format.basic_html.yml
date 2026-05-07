@@ -22,13 +22,13 @@ filters:
   filter_align:
     id: filter_align
     provider: filter
-    status: false
+    status: true
     weight: 7
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
-    status: false
+    status: true
     weight: 8
     settings: {  }
   filter_html:

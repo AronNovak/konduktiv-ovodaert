@@ -1,0 +1,86 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b2b10004-0004-4004-8004-000000000004
+  bundle: image
+  default_langcode: hu
+  depends:
+    2d3055d0-60d8-49ab-8663-cf6e54d8f798: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: '1% kampány'
+  created:
+    -
+      value: 1778138385
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Konduktív Óvodáért Alapítvány'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'This is the Drupal Starter project.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/hu/node/4'
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/hu'
+        group: schema_organization
+        schema_metatag: true
+  path:
+    -
+      alias: ''
+      langcode: hu
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_media_image:
+    -
+      entity: 2d3055d0-60d8-49ab-8663-cf6e54d8f798
+      alt: '1% kampány plakát'
+      title: '1% kampány'
+      width: 1340
+      height: 1368

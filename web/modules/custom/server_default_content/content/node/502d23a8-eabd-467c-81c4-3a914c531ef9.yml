@@ -39,12 +39,97 @@ default:
       tag: meta
       attributes:
         name: title
-        content: 'Search | Drupal Starter'
+        content: 'Search | Konduktív Óvodáért Alapítvány'
     -
       tag: link
       attributes:
         rel: canonical
-        href: 'https://drupal-starter.ddev.site:4443/search'
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/en/search'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: Search
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/en'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: WebPage
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@id'
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/en/search'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: Search
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: breadcrumb
+        content:
+          '@type': BreadcrumbList
+          itemListElement:
+            -
+              '@type': ListItem
+              position: 1
+              name: Home
+              item: 'https://konduktiv-ovodaert.ddev.site:4443/hu'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of what this page covers.'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: publisher
+        content:
+          '@type': Organization
+          name: 'Konduktív Óvodáért Alapítvány'
+          url: 'https://konduktiv-ovodaert.ddev.site:4443/en'
+        group: schema_web_page
+        schema_metatag: true
   path:
     -
       alias: /search

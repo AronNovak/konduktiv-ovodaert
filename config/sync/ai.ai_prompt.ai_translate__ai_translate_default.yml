@@ -1,5 +1,5 @@
 uuid: f70792d8-a7d6-4799-97ee-abfaf942b37d
-langcode: en
+langcode: hu
 status: true
 dependencies: {  }
 id: ai_translate__ai_translate_default

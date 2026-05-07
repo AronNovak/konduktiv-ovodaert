@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ff97932b-d80f-43cd-96b1-7868e5db6875
+  default_langcode: hu
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: project-rehab.jpg
+  uri:
+    -
+      value: 'public://project-rehab.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 681120
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1778138351

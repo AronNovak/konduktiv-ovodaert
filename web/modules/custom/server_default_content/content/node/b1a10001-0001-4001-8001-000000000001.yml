@@ -1,0 +1,217 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1a10001-0001-4001-8001-000000000001
+  bundle: landing_page
+  default_langcode: hu
+  depends:
+    b2b10003-0003-4003-8003-000000000003: media
+default:
+  revision_uid:
+    -
+      target_id: 0
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  title:
+    -
+      value: Rólunk
+  created:
+    -
+      value: 1778138385
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Rólunk | Konduktív Óvodáért Alapítvány'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/rolunk'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: Rólunk
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: WebPage
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@id'
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/rolunk'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: Rólunk
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: breadcrumb
+        content:
+          '@type': BreadcrumbList
+          itemListElement:
+            -
+              '@type': ListItem
+              position: 1
+              name: Home
+              item: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of what this page covers.'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: publisher
+        content:
+          '@type': Organization
+          name: 'Konduktív Óvodáért Alapítvány'
+          url: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
+  path:
+    -
+      alias: /rolunk
+      langcode: hu
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_is_title_hidden:
+    -
+      value: true
+  field_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d49b2c9c-d260-4a53-bce6-15db342cbe37
+          bundle: hero_image
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778138385
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_image:
+            -
+              entity: b2b10003-0003-4003-8003-000000000003
+          field_subtitle:
+            -
+              value: 'Az Alapítvány története és küldetése'
+          field_title:
+            -
+              value: Rólunk
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: dbe158be-0ad6-4985-9cbb-738148cca86a
+          bundle: text
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778138385
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_body:
+            -
+              value: '<p>A Konduktív Óvodáért Alapítvány 2009 márciusában jött létre azzal a céllal, hogy támogassa a mai Semmelweis Egyetem Pető András Gyakorló Óvodájának működését. Munkánk középpontjában a konduktív pedagógia áll: olyan fejlesztési módszer, amely a mozgásukban akadályozott gyermekek aktív részvételére, önálló cselekvésére épít.</p><p>Tevékenységünk fókusza a mindennapi óvodai munkához szükséges fejlesztő eszközök, játékok beszerzése, illetve olyan kezdeményezések támogatása, amelyek a gyermekek életminőségét és a szülők lehetőségeit bővítik.</p>'
+              format: basic_html
+          field_title:
+            -
+              value: 'Az Alapítvány'

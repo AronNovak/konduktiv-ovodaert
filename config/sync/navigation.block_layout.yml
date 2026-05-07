@@ -1,6 +1,6 @@
 _core:
   default_config_hash: cuTeu3Ofcyr5lAUZ0bvd-Qsp3ZPDBkzOWM6iAFOQMLw
-langcode: en
+langcode: hu
 sections:
   -
     layout_id: navigation_layout

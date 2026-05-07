@@ -28,7 +28,7 @@ default:
       tag: meta
       attributes:
         name: title
-        content: '| Drupal Starter'
+        content: '| Konduktív Óvodáért Alapítvány'
     -
       tag: meta
       attributes:
@@ -38,7 +38,35 @@ default:
       tag: link
       attributes:
         rel: canonical
-        href: 'https://drupal-starter.ddev.site:4443/homepage'
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/en/node/4'
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/en'
+        group: schema_organization
+        schema_metatag: true
   path:
     -
       alias: ''

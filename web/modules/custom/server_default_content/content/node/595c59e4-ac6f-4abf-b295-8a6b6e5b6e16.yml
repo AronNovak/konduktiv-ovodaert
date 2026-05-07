@@ -3,7 +3,7 @@ _meta:
   entity_type: node
   uuid: 595c59e4-ac6f-4abf-b295-8a6b6e5b6e16
   bundle: landing_page
-  default_langcode: en
+  default_langcode: hu
   depends:
     11318276-1099-48d3-ae54-1e4746558d2e: user
 default:
@@ -18,7 +18,7 @@ default:
       entity: 11318276-1099-48d3-ae54-1e4746558d2e
   title:
     -
-      value: Contact
+      value: Kapcsolat
   created:
     -
       value: 1733308940
@@ -39,17 +39,102 @@ default:
       tag: meta
       attributes:
         name: title
-        content: 'Contact | Drupal Starter'
+        content: 'Kapcsolat | Konduktív Óvodáért Alapítvány'
     -
       tag: link
       attributes:
         rel: canonical
-        href: 'https://drupal-starter.ddev.site:4443/contact'
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/kapcsolat'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: Kapcsolat
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: Organization
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of the organisation and its purpose.'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: 'Konduktív Óvodáért Alapítvány'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: url
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_organization
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@type'
+        content: WebPage
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: '@id'
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/kapcsolat'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: name
+        content: Kapcsolat
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: breadcrumb
+        content:
+          '@type': BreadcrumbList
+          itemListElement:
+            -
+              '@type': ListItem
+              position: 1
+              name: Home
+              item: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'A brief description of what this page covers.'
+        group: schema_web_page
+        schema_metatag: true
+    -
+      tag: meta
+      attributes:
+        name: publisher
+        content:
+          '@type': Organization
+          name: 'Konduktív Óvodáért Alapítvány'
+          url: 'https://konduktiv-ovodaert.ddev.site:4443/'
+        group: schema_web_page
+        schema_metatag: true
   path:
     -
-      alias: /contact
-      langcode: en
-      pathauto: 1
+      alias: /kapcsolat
+      langcode: hu
+      pathauto: 0
   content_translation_source:
     -
       value: und
@@ -58,23 +143,23 @@ default:
       value: false
   field_is_title_hidden:
     -
-      value: false
+      value: true
   field_paragraphs:
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 917a8c08-14ee-455a-8174-5ef13abf37e3
-          bundle: form
-          default_langcode: en
+          uuid: 4755fd91-76b4-41b9-8d0f-ceb3531a7a37
+          bundle: text
+          default_langcode: hu
         default:
           status:
             -
               value: true
           created:
             -
-              value: 1733308948
+              value: 1778138385
           behavior_settings:
             -
               value: {  }
@@ -87,14 +172,14 @@ default:
           content_translation_outdated:
             -
               value: false
-          field_description:
+          field_body:
             -
-              value: '<p>Please use the form bellow to contact us!</p>'
+              value: |-
+                <p><strong>Konduktív Óvodáért Alapítvány</strong><br>
+                2011 Budakalász, Kossuth L. u. 7.<br>
+                E-mail: <a href="mailto:petoovialapitvany@gmail.com">petoovialapitvany@gmail.com</a><br>
+                Facebook: <a href="https://www.facebook.com/konduktivovialapitvany/" target="_blank" rel="noopener">facebook.com/konduktivovialapitvany</a></p>
               format: basic_html
-          field_webform:
+          field_title:
             -
-              target_id: contact
-              default_data: ''
-              status: open
-              open: ''
-              close: ''
+              value: Kapcsolat
