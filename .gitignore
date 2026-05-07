@@ -15,6 +15,9 @@ web/private/
 # Ignore Drupal's file directory
 /web/sites/*/files/
 
+# Glance MCP browser screenshots/sessions
+/.browser-sessions/
+
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
 

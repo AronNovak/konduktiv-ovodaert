@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Flat horizontal main menu for the desktop header.
+ *
+ * Available variables:
+ * - items: list of {title, url, in_active_trail}.
+ */
+#}
+{% if items %}
+  <ul class="flex items-center gap-6 m-0 p-0 list-none">
+    {% for item in items %}
+      <li class="m-0 p-0">
+        <a href="{{ item.url }}" class="inline-block py-2 text-brand-ink hover:text-brand-primary focus-visible:text-brand-primary transition-colors duration-200 {{ item.in_active_trail ? 'text-brand-primary border-b-2 border-brand-primary' }}">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

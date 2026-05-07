@@ -114,6 +114,8 @@ function server_theme_theme() {
       'language_block_dropdown' => NULL,
       'language_block_links' => NULL,
       'menu' => NULL,
+      // Inline horizontal menu rendered in the desktop header bar.
+      'inline_menu' => NULL,
       // Site name from the config.
       'site_name' => \Drupal::config('system.site')->get('name'),
       // Site messages passed by \Drupal::messenger().
@@ -124,6 +126,12 @@ function server_theme_theme() {
   $info['server_theme_header_menu'] = [
     'variables' => [
       'main_menu' => [],
+    ],
+  ];
+
+  $info['server_theme_inline_main_menu'] = [
+    'variables' => [
+      'items' => [],
     ],
   ];
 
@@ -551,6 +559,7 @@ function server_theme_preprocess_page(array &$variables) {
     '#language_block_dropdown' => server_theme_prepare_block('language_dropdown_block:language_interface', $language_block_config),
     '#language_block_links' => server_theme_prepare_block('language_block:language_interface', $language_block_config),
     '#messages' => $messages,
+    '#inline_menu' => _server_theme_build_inline_main_menu(),
   ];
 
   $variables['page']['primary_menu'] = [
@@ -665,4 +674,43 @@ function server_theme_preprocess_image_style(array &$variables) {
   if (in_array($variables['style_name'], $eager_styles, TRUE)) {
     $variables['image']['#attributes']['loading'] = 'eager';
   }
+}
+
+/**
+ * Build a flat list of top-level main menu items for the desktop header bar.
+ *
+ * Renders a simple horizontal nav inline alongside the logo on lg+ screens,
+ * separate from the burger overlay (which uses menu--main.html.twig).
+ */
+function _server_theme_build_inline_main_menu(): array {
+  $menu_tree = \Drupal::menuTree();
+  $parameters = $menu_tree->getCurrentRouteMenuTreeParameters('main');
+  $parameters->setMaxDepth(1);
+  $tree = $menu_tree->load('main', $parameters);
+  $manipulators = [
+    ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+    ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+  ];
+  $tree = $menu_tree->transform($tree, $manipulators);
+
+  $items = [];
+  foreach ($tree as $element) {
+    if (!$element->access || !$element->access->isAllowed()) {
+      continue;
+    }
+    $link = $element->link;
+    $items[] = [
+      'title' => $link->getTitle(),
+      'url' => $link->getUrlObject(),
+      'in_active_trail' => $element->inActiveTrail,
+    ];
+  }
+  return [
+    '#theme' => 'server_theme_inline_main_menu',
+    '#items' => $items,
+    '#cache' => [
+      'contexts' => ['route.menu_active_trails:main', 'url.path'],
+      'tags' => ['config:system.menu.main'],
+    ],
+  ];
 }
