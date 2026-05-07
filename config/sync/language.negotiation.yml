@@ -5,12 +5,14 @@ session:
 url:
   source: path_prefix
   prefixes:
-    en: ''
+    en: en
     ar: ar
     es: es
     '': null
+    hu: hu
   domains:
     en: ''
     ar: ''
     es: ''
+    hu: ''
 selected_langcode: site_default

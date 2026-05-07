@@ -43,6 +43,13 @@ opensans:
         external: true
         minified: true
 
+quicksand:
+  css:
+    base:
+      '//fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap':
+        external: true
+        minified: true
+
 font-awesome:
   css:
     theme:

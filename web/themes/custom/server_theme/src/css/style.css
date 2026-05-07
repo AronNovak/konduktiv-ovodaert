@@ -5,6 +5,21 @@
 @theme {
   /* Extend max-width with custom 8xl size */
   --max-width-8xl: 90rem;
+
+  /* Foundation brand palette, sampled from the foundation logo:
+     warm orange primary, mint accent, soft cream backgrounds. */
+  --color-brand-primary: #f16f2c;
+  --color-brand-primary-dark: #c95a1f;
+  --color-brand-accent: #73c1a2;
+  --color-brand-accent-dark: #4a9d7d;
+  --color-brand-yellow: #f4c542;
+  --color-brand-blue: #5481bd;
+  --color-brand-cream: #fff7ec;
+  --color-brand-ink: #2d2a26;
+
+  /* Friendlier display font for a kindergarten-oriented foundation. */
+  --font-sans: "Open Sans", system-ui, sans-serif;
+  --font-display: "Quicksand", "Open Sans", system-ui, sans-serif;
 }
 
 @source "../../templates/**/*.html.twig";

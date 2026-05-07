@@ -7,11 +7,19 @@ button,
 legend,
 label {
   @apply tracking-normal;
+  font-family: var(--font-sans);
 }
 
 /* Apply standard text-color. */
 body {
-  @apply text-gray-900;
+  @apply text-gray-900 bg-brand-cream;
+}
+
+/* Display font for headings and the site title. */
+h1, h2, h3, h4, h5, h6,
+.main-logo-text,
+.font-display {
+  font-family: var(--font-display);
 }
 
 .prose {

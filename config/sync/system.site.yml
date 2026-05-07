@@ -2,8 +2,8 @@ _core:
   default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
 langcode: en
 uuid: cf19c207-fe02-41f0-8711-348cfb15974b
-name: 'Drupal Starter'
-mail: admin@example.com
+name: 'Konduktív Óvodáért Alapítvány'
+mail: info@kondovialapitvany.hu
 slogan: ''
 page:
   403: /403
@@ -11,5 +11,5 @@ page:
   front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
-default_langcode: en
+default_langcode: hu
 mail_notification: ''

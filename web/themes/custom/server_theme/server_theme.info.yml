@@ -1,6 +1,6 @@
-name: Drupal 10 Starter Theme
+name: Konduktív Óvodáért Alapítvány
 type: theme
-description: 'A foundation for building a theme for Drupal Starter.'
+description: 'Custom theme for the Konduktív Óvodáért Alapítvány foundation site.'
 package: Server
 core_version_requirement: ^10 || ^11
 libraries:
@@ -9,9 +9,10 @@ libraries:
   - server_theme/global-scripts
   - server_theme/font-awesome
   - server_theme/opensans
+  - server_theme/quicksand
   - server_theme/roboto
 
-logo: logo.svg
+logo: logo.png
 
 base theme: classy
 
