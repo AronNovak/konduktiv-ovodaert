@@ -46,7 +46,7 @@ default:
       tag: link
       attributes:
         rel: canonical
-        href: 'https://konduktiv-ovodaert.ddev.site:4443/node/4'
+        href: 'https://konduktiv-ovodaert.ddev.site:4443/node/5'
     -
       tag: meta
       attributes:
@@ -91,7 +91,7 @@ default:
       tag: meta
       attributes:
         name: '@id'
-        content: 'https://konduktiv-ovodaert.ddev.site:4443/node/4'
+        content: 'https://konduktiv-ovodaert.ddev.site:4443/node/5'
         group: schema_web_page
         schema_metatag: true
     -
@@ -111,7 +111,7 @@ default:
             -
               '@type': ListItem
               position: 1
-              name: Home
+              name: Címlap
               item: 'https://konduktiv-ovodaert.ddev.site:4443/'
         group: schema_web_page
         schema_metatag: true
@@ -177,12 +177,6 @@ default:
           field_image:
             -
               entity: b2b10002-0002-4002-8002-000000000002
-          field_subtitle:
-            -
-              value: 'A Pető András Gyakorló Óvoda mozgássérült gyermekeinek fejlődéséért 2009 óta.'
-          field_title:
-            -
-              value: 'A mi szuperhőseink'
     -
       entity:
         _meta:
@@ -530,37 +524,3 @@ default:
           field_title:
             -
               value: 'Csatlakozzon hozzánk!'
-    -
-      entity:
-        _meta:
-          version: '1.0'
-          entity_type: paragraph
-          uuid: 7221d87a-677e-4382-bd29-2b40f6564d88
-          bundle: text
-          default_langcode: hu
-        default:
-          status:
-            -
-              value: true
-          created:
-            -
-              value: 1778143726
-          behavior_settings:
-            -
-              value: {  }
-          revision_translation_affected:
-            -
-              value: true
-          content_translation_source:
-            -
-              value: und
-          content_translation_outdated:
-            -
-              value: false
-          field_body:
-            -
-              value: '<p>Az alapítvány partnerei között megtalálhatóak hazai és nemzetközi cégek, közintézmények és magánszemélyek egyaránt — támogatásuk nélkül nem tudnánk folyamatos jelenlétet biztosítani az óvodában.</p><p><a href="/tamogatoink"><strong>Lássuk a támogatóink listáját →</strong></a></p>'
-              format: basic_html
-          field_title:
-            -
-              value: 'Köszönjük támogatóinknak'
