@@ -10,8 +10,8 @@ id: config_pages.main_settings.field_locked_pages
 field_name: field_locked_pages
 entity_type: config_pages
 bundle: main_settings
-label: 'Locked pages'
-description: ''
+label: 'Zárolt oldalak'
+description: 'Olyan oldalak, amelyeket nem lehet törölni vagy közzé nem tett állapotba állítani.'
 required: false
 translatable: false
 default_value: {  }

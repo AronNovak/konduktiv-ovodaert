@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: form
-label: Form
-icon_uuid: null
-icon_default: null
-description: 'Allows adding forms defined by Webform module.'
+label: Űrlap
+icon_uuid: ~
+icon_default: ~
+description: 'Beágyazott webform.'
 behavior_plugins: {  }

@@ -11,7 +11,7 @@ id: node.news.field_publish_date
 field_name: field_publish_date
 entity_type: node
 bundle: news
-label: 'Publish date'
+label: 'Megjelenés dátuma'
 description: ''
 required: false
 translatable: false

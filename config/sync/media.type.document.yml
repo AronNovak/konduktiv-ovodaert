@@ -8,8 +8,8 @@ third_party_settings:
   crop:
     image_field: _none
 id: document
-label: Document
-description: ''
+label: Dokumentum
+description: 'PDF vagy egyéb letölthető fájl.'
 source: file
 queue_thumbnail_downloads: false
 new_revision: false

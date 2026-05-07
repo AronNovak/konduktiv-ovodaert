@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: hero_image
-label: 'Hero image'
-icon_uuid: null
-icon_default: null
-description: ''
+label: 'Vezető kép'
+icon_uuid: ~
+icon_default: ~
+description: 'Nagy kép címmel és alcímmel az oldal tetején.'
 behavior_plugins: {  }

@@ -9,7 +9,7 @@ id: paragraph.news_teasers.field_title
 field_name: field_title
 entity_type: paragraph
 bundle: news_teasers
-label: Title
+label: Cím
 description: ''
 required: false
 translatable: true

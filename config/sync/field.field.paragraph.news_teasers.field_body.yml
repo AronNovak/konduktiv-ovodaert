@@ -11,7 +11,7 @@ id: paragraph.news_teasers.field_body
 field_name: field_body
 entity_type: paragraph
 bundle: news_teasers
-label: Description
+label: Szöveg
 description: ''
 required: false
 translatable: true

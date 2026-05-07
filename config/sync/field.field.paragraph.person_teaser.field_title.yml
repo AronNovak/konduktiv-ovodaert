@@ -9,7 +9,7 @@ id: paragraph.person_teaser.field_title
 field_name: field_title
 entity_type: paragraph
 bundle: person_teaser
-label: Name
+label: Cím
 description: ''
 required: true
 translatable: true

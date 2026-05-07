@@ -9,10 +9,10 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Landing page'
+name: Oldal
 type: landing_page
-description: "Use <em>landing pages</em> for your configurable pages with paragraphs, such as an 'Home' page."
-help: null
+description: 'Általános oldal bekezdésekből összeállítva (kezdőlap, tematikus oldalak).'
+help: ~
 new_revision: true
 preview_mode: 1
 display_submitted: false

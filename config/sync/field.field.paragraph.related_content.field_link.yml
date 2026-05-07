@@ -11,7 +11,7 @@ id: paragraph.related_content.field_link
 field_name: field_link
 entity_type: paragraph
 bundle: related_content
-label: Link
+label: Hivatkozás
 description: ''
 required: false
 translatable: true

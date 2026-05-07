@@ -12,7 +12,7 @@ id: paragraph.quick_links.field_quick_link_items
 field_name: field_quick_link_items
 entity_type: paragraph
 bundle: quick_links
-label: 'Quick link items'
+label: 'Gyors hivatkozás elemek'
 description: ''
 required: true
 translatable: false

@@ -9,7 +9,7 @@ id: paragraph.hero_image.field_subtitle
 field_name: field_subtitle
 entity_type: paragraph
 bundle: hero_image
-label: Subtitle
+label: Alcím
 description: ''
 required: false
 translatable: false

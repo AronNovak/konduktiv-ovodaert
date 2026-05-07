@@ -9,7 +9,7 @@ id: media.video.field_media_credit
 field_name: field_media_credit
 entity_type: media
 bundle: video
-label: Credit
+label: Forrás
 description: ''
 required: false
 translatable: true

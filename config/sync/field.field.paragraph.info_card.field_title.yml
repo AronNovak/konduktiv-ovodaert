@@ -9,7 +9,7 @@ id: paragraph.info_card.field_title
 field_name: field_title
 entity_type: paragraph
 bundle: info_card
-label: Title
+label: Cím
 description: ''
 required: true
 translatable: true

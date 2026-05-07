@@ -11,7 +11,7 @@ id: paragraph.related_content.field_body
 field_name: field_body
 entity_type: paragraph
 bundle: related_content
-label: Description
+label: Szöveg
 description: ''
 required: false
 translatable: true

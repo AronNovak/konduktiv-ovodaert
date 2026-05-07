@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: cta
-label: 'Call to action'
-icon_uuid: null
-icon_default: null
-description: ''
+label: 'Cselekvésre felhívás'
+icon_uuid: ~
+icon_default: ~
+description: 'Felhívás gombbal és rövid szöveggel.'
 behavior_plugins: {  }

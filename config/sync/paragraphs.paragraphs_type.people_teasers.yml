@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: people_teasers
-label: 'People teasers'
-icon_uuid: null
-icon_default: null
+label: 'Munkatársak ajánlója'
+icon_uuid: ~
+icon_default: ~
 description: 'Show People teasers as a grid of cards.'
 behavior_plugins: {  }

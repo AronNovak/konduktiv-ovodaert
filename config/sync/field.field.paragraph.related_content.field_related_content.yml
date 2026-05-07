@@ -10,7 +10,7 @@ id: paragraph.related_content.field_related_content
 field_name: field_related_content
 entity_type: paragraph
 bundle: related_content
-label: 'Related content'
+label: 'Kapcsolódó tartalom'
 description: ''
 required: true
 translatable: true

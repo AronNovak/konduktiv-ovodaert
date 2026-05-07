@@ -9,8 +9,8 @@ id: node.landing_page.field_is_title_hidden
 field_name: field_is_title_hidden
 entity_type: node
 bundle: landing_page
-label: 'Hide title'
-description: 'Check to hide the title on the page.'
+label: 'Cím elrejtve'
+description: 'Ha be van pipálva, az oldal címe nem jelenik meg az oldalon (a kibontott bekezdések adják a vezető címet).'
 required: false
 translatable: false
 default_value:

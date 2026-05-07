@@ -9,7 +9,7 @@ id: paragraph.info_card.field_subtitle
 field_name: field_subtitle
 entity_type: paragraph
 bundle: info_card
-label: Subtitle
+label: Alcím
 description: ''
 required: false
 translatable: true

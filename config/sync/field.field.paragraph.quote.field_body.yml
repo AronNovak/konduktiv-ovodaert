@@ -11,7 +11,7 @@ id: paragraph.quote.field_body
 field_name: field_body
 entity_type: paragraph
 bundle: quote
-label: Text
+label: Szöveg
 description: ''
 required: true
 translatable: true

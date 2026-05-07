@@ -10,7 +10,7 @@ id: node.news.field_featured_image
 field_name: field_featured_image
 entity_type: node
 bundle: news
-label: 'Featured image'
+label: 'Kiemelt kép'
 description: ''
 required: false
 translatable: true

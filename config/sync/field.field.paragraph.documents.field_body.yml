@@ -11,7 +11,7 @@ id: paragraph.documents.field_body
 field_name: field_body
 entity_type: paragraph
 bundle: documents
-label: Description
+label: Szöveg
 description: ''
 required: false
 translatable: true

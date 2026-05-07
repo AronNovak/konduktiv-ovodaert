@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: news_teasers
-label: 'News teasers'
-icon_uuid: null
-icon_default: null
+label: 'Hírek ajánlója'
+icon_uuid: ~
+icon_default: ~
 description: 'Show News teasers as a grid of cards.'
 behavior_plugins: {  }

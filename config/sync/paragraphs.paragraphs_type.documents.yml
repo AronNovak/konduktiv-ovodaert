@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: documents
-label: Documents
-icon_uuid: null
-icon_default: null
-description: 'Show a list of Media documents.'
+label: Dokumentumok
+icon_uuid: ~
+icon_default: ~
+description: 'Letölthető fájlok listája.'
 behavior_plugins: {  }

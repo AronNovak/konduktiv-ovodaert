@@ -9,7 +9,7 @@ id: paragraph.person_teaser.field_subtitle
 field_name: field_subtitle
 entity_type: paragraph
 bundle: person_teaser
-label: Subtitle
+label: Alcím
 description: ''
 required: false
 translatable: true

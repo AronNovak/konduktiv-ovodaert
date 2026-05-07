@@ -10,7 +10,7 @@ id: paragraph.quote.field_image
 field_name: field_image
 entity_type: paragraph
 bundle: quote
-label: Image
+label: Kép
 description: ''
 required: true
 translatable: true

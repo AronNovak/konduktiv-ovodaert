@@ -11,7 +11,7 @@ id: media.image.field_media_image
 field_name: field_media_image
 entity_type: media
 bundle: image
-label: Image
+label: Kép
 description: ''
 required: true
 translatable: false
@@ -30,9 +30,9 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: null
+    uuid: ~
     alt: ''
     title: ''
-    width: null
-    height: null
+    width: ~
+    height: ~
 field_type: image
