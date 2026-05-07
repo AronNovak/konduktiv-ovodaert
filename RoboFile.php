@@ -47,10 +47,7 @@ class RoboFile extends Tasks {
    * @see \TranslationManagement\ExportFromConfig
    * @see \TranslationManagement\ImportToConfig
    */
-  const INSTALLED_LANGUAGES = [
-    'ar',
-    'es',
-  ];
+  const INSTALLED_LANGUAGES = [];
 
   /**
    * Bootstraps Drupal 8 in addition to Robo.

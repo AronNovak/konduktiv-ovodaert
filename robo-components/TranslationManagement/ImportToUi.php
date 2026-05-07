@@ -26,6 +26,10 @@ trait ImportToUi {
    * @throws \Exception
    */
   public function localeImport(bool $is_local = TRUE, string $env = 'test'): ResultData {
+    if (empty(self::INSTALLED_LANGUAGES)) {
+      // Nothing to import — return success so install hooks keep going.
+      return new ResultData(ResultData::EXITCODE_OK);
+    }
     $commands = [];
     if ($is_local) {
       foreach (self::INSTALLED_LANGUAGES as $language) {
