@@ -38,12 +38,16 @@ class ServerGeneralNodeLandingPageTest extends ServerGeneralNodeTestBase {
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
   public function testGeneral() {
-    $paragraph_types = [
-      'Hero image',
-      'Related content',
-      'Search',
-      'Text',
-      'News teasers',
+    // The form's "Add X" buttons inherit the paragraph type label, which is
+    // Hungarian on this site. Asserting on a stable per-button selector
+    // (data-drupal-selector value contains the bundle machine name) keeps
+    // this test from breaking when labels are re-translated.
+    $bundles = [
+      'hero_image',
+      'text',
+      'info_cards',
+      'cta',
+      'quick_links',
     ];
 
     $assert = $this->assertSession();
@@ -52,11 +56,10 @@ class ServerGeneralNodeLandingPageTest extends ServerGeneralNodeTestBase {
     $user->addRole('administrator');
     $user->save();
     $this->drupalLogin($user);
-    $this->drupalGet("/node/add/landing_page");
-    // Paragraph wrapper exists.
+    $this->drupalGet('/node/add/landing_page');
     $assert->elementExists('css', '.field--name-field-paragraphs');
-    foreach ($paragraph_types as $type) {
-      $assert->buttonExists("Add {$type}");
+    foreach ($bundles as $bundle) {
+      $assert->elementExists('css', "input[name=\"field_paragraphs_{$bundle}_add_more\"]");
     }
   }
 

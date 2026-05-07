@@ -44,7 +44,8 @@ class ServerGeneralCacheTest extends ServerGeneralTestBase {
    */
   public function testHomepageMenuCache() {
     $this->drupalGet('<front>');
-    $this->assertMenuState('What We Do');
+    // One of the foundation's main-menu items, declared in default content.
+    $this->assertMenuState('Rólunk');
     $this->addMenuItem('New Menu Item', 'node/1');
     $this->drupalGet('<front>');
     $this->assertMenuState('New Menu Item');

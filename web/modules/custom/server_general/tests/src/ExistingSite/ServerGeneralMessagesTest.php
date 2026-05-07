@@ -33,20 +33,19 @@ class ServerGeneralMessagesTest extends ServerGeneralTestBase {
     $assert = $this->assertSession();
     $assert->statusCodeEquals(Response::HTTP_OK);
 
-    // Change the title.
-    $this->getCurrentPage()->fillField('Title', 'Updated Landing Page Title');
+    // Use the form field's machine name so the assertion isn't sensitive
+    // to the UI language ("Title" in English, "Cím" in Hungarian).
+    $this->getCurrentPage()->fillField('title[0][value]', 'Updated Landing Page Title');
 
-    // Save the node.
-    $this->getCurrentPage()->pressButton('Save');
+    // Save the node — submit button has a stable data-drupal-selector value.
+    $this->getCurrentPage()->find('css', '[data-drupal-selector="edit-submit"]')->click();
 
     // Assert that the messages container exists.
     $assert->elementExists('css', '[data-drupal-messages]');
 
-    // Assert that the success message appears with proper role and aria-label.
-    $assert->elementExists('css', '[role="contentinfo"][aria-label="Status message"]');
-
-    // Assert the messages--status class exists.
-    $assert->elementExists('css', '.messages--status');
+    // Status message wrapper exists, regardless of which language the
+    // aria-label string itself is rendered in.
+    $assert->elementExists('css', '[role="contentinfo"].messages--status');
   }
 
 }
