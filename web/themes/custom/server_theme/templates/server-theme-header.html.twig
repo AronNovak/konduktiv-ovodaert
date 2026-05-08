@@ -9,8 +9,8 @@
 
     {# Both logos linked to the homepage. The foundation logo image already contains the name. #}
     <a href="{{ path('<front>') }}" class="flex items-center gap-3 md:gap-5 shrink-0" id="main-logo" aria-label="{{ site_name }}">
-      <img src="/{{ directory }}/dist/images/logo-foundation.png" alt="{{ site_name }}" class="h-12 md:h-16 w-auto">
-      <img src="/{{ directory }}/dist/images/logo-petoovi.png" alt="{{ 'Pető ovi'|t }}" class="hidden sm:block h-10 md:h-14 w-auto">
+      <img src="{{ file_url(directory ~ '/dist/images/logo-foundation.png') }}" alt="{{ site_name }}" class="h-12 md:h-16 w-auto">
+      <img src="{{ file_url(directory ~ '/dist/images/logo-petoovi.png') }}" alt="{{ 'Pető ovi'|t }}" class="hidden sm:block h-10 md:h-14 w-auto">
     </a>
 
     {# Desktop horizontal nav. The mobile/burger overlay still renders via page.primary_menu. #}
