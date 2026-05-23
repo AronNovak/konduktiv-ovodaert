@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: info_card
-label: 'Info card'
-icon_uuid: null
-icon_default: null
-description: 'A single info card.'
+label: 'Információs kártya'
+icon_uuid: ~
+icon_default: ~
+description: 'Egyetlen kártya a kártyacsoporton belül.'
 behavior_plugins: {  }

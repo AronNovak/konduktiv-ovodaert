@@ -19,7 +19,8 @@
         }
     ],
     "require": {
-        "php": "^8.3",
+        "php": "^8.2",
+        "symfony/polyfill-php83": "^1.29",
         "ext-curl": "*",
         "ext-dom": "*",
         "ext-intl": "*",
@@ -136,6 +137,9 @@
         }
     },
     "config": {
+        "platform": {
+            "php": "8.2.0"
+        },
         "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
@@ -163,7 +167,8 @@
                 "[web-root]/sites/services.yml": false,
                 "[web-root]/robots.txt": false,
                 "[web-root]/sites/default/settings.php": false,
-                "[web-root]/sites/default/settings.pantheon.php": false
+                "[web-root]/sites/default/settings.pantheon.php": false,
+                "[web-root]/.htaccess": false
             }
         },
         "installer-paths": {

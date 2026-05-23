@@ -9,7 +9,7 @@ id: paragraph.related_content.field_is_featured
 field_name: field_is_featured
 entity_type: paragraph
 bundle: related_content
-label: Featured
+label: Kiemelt
 description: 'Determine if cards should show as "Featured" - bigger cards, and only a single one at a time.'
 required: false
 translatable: false

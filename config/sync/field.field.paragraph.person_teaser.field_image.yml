@@ -10,7 +10,7 @@ id: paragraph.person_teaser.field_image
 field_name: field_image
 entity_type: paragraph
 bundle: person_teaser
-label: Image
+label: Kép
 description: "The person's profile picture"
 required: true
 translatable: true

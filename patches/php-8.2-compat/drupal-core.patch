@@ -1,0 +1,55 @@
+--- a/core/lib/Drupal.php	2025-12-04 09:39:08.000000000 +0100
++++ b/core/lib/Drupal.php	2026-05-08 15:25:57.743988115 +0200
+@@ -114,7 +114,7 @@
+    * - Once in the error message printed to the user immediately after.
+    * Remember to update both whenever this constant is updated.
+    */
+-  const MINIMUM_PHP = '8.3.0';
++  const MINIMUM_PHP = '8.2.0';
+ 
+   /**
+    * Minimum recommended value of PHP memory_limit.
+--- a/core/lib/Drupal/Core/Utility/PhpRequirements.php	2025-12-04 09:39:08.000000000 +0100
++++ b/core/lib/Drupal/Core/Utility/PhpRequirements.php	2026-05-08 15:25:58.944999951 +0200
+@@ -31,6 +31,7 @@
+    *   by the PHP version.
+    */
+   private static $phpEolDates = [
++    '8.2' => '2026-12-31',
+     '8.3' => '2027-12-31',
+   ];
+ 
+--- a/core/lib/Drupal/Component/Utility/ArgumentsResolver.php	2025-12-04 09:39:08.000000000 +0100
++++ b/core/lib/Drupal/Component/Utility/ArgumentsResolver.php	2026-05-08 15:50:47.839699166 +0200
+@@ -123,7 +123,8 @@
+       return new \ReflectionMethod($callable[0], $callable[1]);
+     }
+     if (is_string($callable) && str_contains($callable, "::")) {
+-      return \ReflectionMethod::createFromMethodName($callable);
++      [$class, $method] = explode('::', $callable, 2);
++      return new \ReflectionMethod($class, $method);
+     }
+     return new \ReflectionFunction($callable);
+   }
+--- a/core/lib/Drupal/Core/Theme/Registry.php	2025-12-04 09:39:08.000000000 +0100
++++ b/core/lib/Drupal/Core/Theme/Registry.php	2026-05-08 15:27:41.758919804 +0200
+@@ -37,7 +37,7 @@
+    * and preprocess. This supports invoking preprocess hooks
+    * implemented using #[Preprocess] attributes or procedural functions.
+    */
+-  private const string PREPROCESS_INVOKES = 'preprocess invokes';
++  private const PREPROCESS_INVOKES = 'preprocess invokes';
+ 
+   /**
+    * The theme object representing the active theme for this registry.
+--- a/core/modules/navigation/src/Plugin/Block/NavigationUserBlock.php	2025-12-04 09:39:08.000000000 +0100
++++ b/core/modules/navigation/src/Plugin/Block/NavigationUserBlock.php	2026-05-08 15:27:41.756734509 +0200
+@@ -25,7 +25,7 @@
+ )]
+ final class NavigationUserBlock extends BlockBase {
+ 
+-  const string NAVIGATION_LINKS_MENU = 'navigation-user-links';
++  const NAVIGATION_LINKS_MENU = 'navigation-user-links';
+ 
+   /**
+    * {@inheritdoc}

@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: video
-label: Video
-description: ''
+label: Videó
+description: 'Beágyazott videó (YouTube, Vimeo stb.).'
 source: 'oembed:video'
 queue_thumbnail_downloads: false
 new_revision: false

@@ -9,7 +9,7 @@ id: media.image.field_media_credit
 field_name: field_media_credit
 entity_type: media
 bundle: image
-label: Credit
+label: Forrás
 description: ''
 required: false
 translatable: false

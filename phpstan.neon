@@ -14,12 +14,6 @@ parameters:
     - '#has no return type specified.#'
     - '#Access to an undefined property Drupal\\Core\\Field\\FieldItemListInterface::\$value.#'
     - '#Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface::\$value.#'
-    # INSTALLED_LANGUAGES is intentionally empty for the Hungarian-only site;
-    # loops and empty checks stay so re-adding a language is just a const tweak.
-    - '#Empty array passed to foreach\.#'
-    - '#Expression in empty\(\) is always falsy\.#'
-    - '#Unreachable statement - code above always terminates\.#'
-    - '#Offset \*NEVER\* on array\{\} on left side of \?\? does not exist\.#'
   paths:
     - web
     - RoboFile.php

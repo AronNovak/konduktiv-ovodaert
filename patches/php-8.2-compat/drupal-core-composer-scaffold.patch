@@ -1,0 +1,11 @@
+--- a/DrupalInstalledTemplate.php	2025-10-13 18:03:31.000000000 +0200
++++ b/DrupalInstalledTemplate.php	2026-05-08 15:27:41.754847273 +0200
+@@ -49,7 +49,7 @@
+         /**
+          * A hash of all the installed packages and their versions.
+          */
+-        public const string VERSIONS_HASH = '$version_hash';
++        public const VERSIONS_HASH = '$version_hash';
+ 
+       }
+ 

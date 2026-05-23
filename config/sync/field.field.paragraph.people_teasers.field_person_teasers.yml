@@ -12,7 +12,7 @@ id: paragraph.people_teasers.field_person_teasers
 field_name: field_person_teasers
 entity_type: paragraph
 bundle: people_teasers
-label: People
+label: 'Személy ajánlók'
 description: ''
 required: true
 translatable: false

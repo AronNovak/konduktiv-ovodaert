@@ -3,18 +3,21 @@
   {#
     We use grid and row/col start to position both the image and the text on
     the same cell. The text card is anchored to the bottom of the image so
-    it doesn't overlap the subjects' faces in photo-led heroes.
+    it doesn't overlap the subjects' faces in photo-led heroes. When the
+    paragraph has no title/subtitle/link, the overlay is suppressed entirely
+    and the image stands on its own.
   #}
   <figure class="row-start-1 col-start-1 child-object-cover">
     {{ image }}
   </figure>
 
-  <div class="row-start-1 col-start-1 z-10 flex flex-col justify-end">
-    <div class="container-wide w-full">
-      <div class="max-w-prose my-6 md:my-8 p-6 md:p-8 lg:p-10 bg-white/90 flex flex-col gap-3 md:gap-4 lg:gap-5 rounded-lg">
-        {{ items }}
-
+  {% if items|render|striptags|trim is not empty %}
+    <div class="row-start-1 col-start-1 z-10 flex flex-col justify-end">
+      <div class="container-wide w-full">
+        <div class="max-w-prose my-6 md:my-8 p-6 md:p-8 lg:p-10 bg-white/90 flex flex-col gap-3 md:gap-4 lg:gap-5 rounded-lg">
+          {{ items }}
+        </div>
       </div>
     </div>
-  </div>
+  {% endif %}
 </div>

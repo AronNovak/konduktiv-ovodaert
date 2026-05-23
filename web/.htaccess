@@ -144,30 +144,10 @@ AddType image/webp .webp
   # Specifically, disallow autoload.php from being served directly.
   RewriteRule "^(.+/.*|autoload)\.php($|/)" - [F]
 
-  # Rules to correctly serve gzip compressed CSS and JS files.
-  # Requires both mod_rewrite and mod_headers to be enabled.
-  <IfModule mod_headers.c>
-    # Serve gzip compressed CSS files if they exist and the client accepts gzip.
-    RewriteCond %{HTTP:Accept-encoding} gzip
-    RewriteCond %{REQUEST_FILENAME}\.gz -s
-    RewriteRule ^(.*css_[a-zA-Z0-9-_]+)\.css$ $1\.css\.gz [QSA]
-
-    # Serve gzip compressed JS files if they exist and the client accepts gzip.
-    RewriteCond %{HTTP:Accept-encoding} gzip
-    RewriteCond %{REQUEST_FILENAME}\.gz -s
-    RewriteRule ^(.*js_[a-zA-Z0-9-_]+)\.js$ $1\.js\.gz [QSA]
-
-    # Serve correct content types, and prevent double compression.
-    RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1,E=no-brotli:1]
-    RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1,E=no-brotli:1]
-
-    <FilesMatch "(\.js\.gz|\.css\.gz)$">
-      # Serve correct encoding type.
-      Header set Content-Encoding gzip
-      # Force proxies to cache gzipped & non-gzipped css/js files separately.
-      Header append Vary Accept-Encoding
-    </FilesMatch>
-  </IfModule>
+  # Pre-compressed CSS/JS rewrite intentionally omitted for the home.pl deploy:
+  # IdeaWebServer ignores no-gzip env hints and re-gzips already-gzipped
+  # .css.gz/.js.gz responses, producing double-encoded output that browsers
+  # reject. Drop scaffold-managed updates to this file with care.
 </IfModule>
 
 # Various header fixes.

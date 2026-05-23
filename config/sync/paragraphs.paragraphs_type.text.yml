@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: text
-label: Text
-icon_uuid: null
-icon_default: null
-description: 'An optional title and body fields.'
+label: Szöveg
+icon_uuid: ~
+icon_default: ~
+description: 'Cím és HTML szöveg.'
 behavior_plugins: {  }

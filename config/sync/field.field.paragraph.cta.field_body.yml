@@ -11,7 +11,7 @@ id: paragraph.cta.field_body
 field_name: field_body
 entity_type: paragraph
 bundle: cta
-label: Description
+label: Szöveg
 description: ''
 required: false
 translatable: true

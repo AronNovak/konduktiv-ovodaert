@@ -10,7 +10,7 @@ id: paragraph.documents.field_documents
 field_name: field_documents
 entity_type: paragraph
 bundle: documents
-label: Documents
+label: Dokumentumok
 description: 'An uploaded file or document, such as a PDF.'
 required: true
 translatable: false

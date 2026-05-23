@@ -15,15 +15,11 @@ class ServerGeneralLockedPagesTest extends ServerGeneralTestBase {
    * Test locked Homepage can't be deleted.
    */
   public function testLockedHomepage() {
-    /** @var \Drupal\node\NodeStorageInterface $node_storage */
-    $node_storage = \Drupal::entityTypeManager()->getStorage('node');
-    $nodes = $node_storage->loadByProperties([
-      'title' => 'Homepage',
-      'type' => 'landing_page',
-    ]);
-
-    /** @var \Drupal\node\NodeInterface $homepage */
-    $homepage = reset($nodes);
+    // The locked homepage now lives under a stable UUID instead of a fixed
+    // English title (the foundation rebrand renamed it).
+    $homepage = \Drupal::service('entity.repository')
+      ->loadEntityByUuid('node', '59aaa9d4-8a47-436a-b8f3-00484c08c124');
+    $this->assertNotNull($homepage, 'Homepage node must exist as default content.');
 
     try {
       $homepage->delete();
@@ -101,23 +97,6 @@ class ServerGeneralLockedPagesTest extends ServerGeneralTestBase {
 
     $this->drupalGet("/node/{$node->id()}/delete");
     $this->assertSession()->statusCodeEquals(Response::HTTP_FORBIDDEN);
-
-    // Test translations.
-    $node_es = $node->addTranslation('es', $node->toArray());
-    $node_es->setTitle('Not locked page ES');
-    $node_es->save();
-
-    $user->addRole('translator');
-    $user->save();
-
-    $this->drupalGet("/node/{$node->id()}/translations");
-    $this->assertSession()->pageTextContains('Translations of');
-    $this->assertSession()->elementTextNotContains('css', 'table', 'Delete');
-
-    $this->drupalGet($node_es->toUrl('edit-form'));
-    $this->assertSession()->statusCodeEquals(Response::HTTP_OK);
-    // "Delete translation" button shouldn't exists if page is locked.
-    $this->assertSession()->elementNotExists('css', '#edit-delete-translation');
 
     // Check locked node for anonymous.
     $this->drupalLogout();

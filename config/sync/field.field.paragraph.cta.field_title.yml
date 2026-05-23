@@ -9,7 +9,7 @@ id: paragraph.cta.field_title
 field_name: field_title
 entity_type: paragraph
 bundle: cta
-label: Title
+label: Cím
 description: ''
 required: true
 translatable: true

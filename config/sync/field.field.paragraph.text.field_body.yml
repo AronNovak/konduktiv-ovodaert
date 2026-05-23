@@ -11,7 +11,7 @@ id: paragraph.text.field_body
 field_name: field_body
 entity_type: paragraph
 bundle: text
-label: Body
+label: Szöveg
 description: ''
 required: true
 translatable: true

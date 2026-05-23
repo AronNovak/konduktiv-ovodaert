@@ -1,0 +1,75 @@
+--- a/src/Application.php	2025-06-01 15:48:30.000000000 +0200
++++ b/src/Application.php	2026-05-08 15:27:41.743819925 +0200
+@@ -43,24 +43,24 @@
+   /**
+    * Path to DCG root directory.
+    */
+-  public const string ROOT = __DIR__ . '/..';
++  public const ROOT = __DIR__ . '/..';
+ 
+   /**
+    * DCG version.
+    *
+    * @deprecated Use \DrupalCodeGenerator\Application->getVersion() instead.
+    */
+-  public const string VERSION = 'unknown';
++  public const VERSION = 'unknown';
+ 
+   /**
+    * DCG API version.
+    */
+-  public const int API = 3;
++  public const API = 3;
+ 
+   /**
+    * Path to templates directory.
+    */
+-  public const string TEMPLATE_PATH = self::ROOT . '/templates';
++  public const TEMPLATE_PATH = self::ROOT . '/templates';
+ 
+   /**
+    * {@selfdoc}
+--- a/src/GeneratorFactory.php	2025-06-01 15:48:30.000000000 +0200
++++ b/src/GeneratorFactory.php	2026-05-08 15:27:41.745991668 +0200
+@@ -14,8 +14,8 @@
+  */
+ final class GeneratorFactory {
+ 
+-  private const string DIRECTORY = Application::ROOT . '/src/Command';
+-  private const string NAMESPACE = '\DrupalCodeGenerator\Command';
++  private const DIRECTORY = Application::ROOT . '/src/Command';
++  private const NAMESPACE = '\DrupalCodeGenerator\Command';
+ 
+   /**
+    * Constructs the object.
+--- a/src/Logger/ConsoleLogger.php	2025-06-01 15:48:30.000000000 +0200
++++ b/src/Logger/ConsoleLogger.php	2026-05-08 15:27:41.748377249 +0200
+@@ -18,7 +18,7 @@
+   /**
+    * Verbosity level map.
+    */
+-  private const array VERBOSITY_LEVEL_MAP = [
++  private const VERBOSITY_LEVEL_MAP = [
+     LogLevel::EMERGENCY => OutputInterface::VERBOSITY_NORMAL,
+     LogLevel::ALERT => OutputInterface::VERBOSITY_NORMAL,
+     LogLevel::CRITICAL => OutputInterface::VERBOSITY_NORMAL,
+--- a/src/Command/Field.php	2025-06-01 15:48:30.000000000 +0200
++++ b/src/Command/Field.php	2026-05-08 15:27:41.750778719 +0200
+@@ -23,7 +23,7 @@
+   /**
+    * Field sub-types.
+    */
+-  private const array SUB_TYPES = [
++  private const SUB_TYPES = [
+     'boolean' => [
+       'label' => 'Boolean',
+       'list' => FALSE,
+@@ -109,7 +109,7 @@
+   /**
+    * Date types.
+    */
+-  private const array DATE_TYPES = [
++  private const DATE_TYPES = [
+     'date' => 'Date only',
+     'datetime' => 'Date and time',
+   ];

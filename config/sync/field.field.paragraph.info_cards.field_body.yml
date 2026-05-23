@@ -11,7 +11,7 @@ id: paragraph.info_cards.field_body
 field_name: field_body
 entity_type: paragraph
 bundle: info_cards
-label: Description
+label: Szöveg
 description: ''
 required: false
 translatable: true

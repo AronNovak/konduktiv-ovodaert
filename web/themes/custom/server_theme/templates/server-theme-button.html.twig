@@ -3,10 +3,10 @@
 {% set actual_button_type = is_download ? 'secondary' : button_type %}
 
 {% set classes = [
-  'flex flex-row items-center gap-x-4 rounded-lg px-6 py-3 text-xl border-2 border-blue-500 hover:bg-blue-600 w-fit transition duration-300',
-  actual_button_type == 'primary' ? 'bg-blue-500 text-white hover:bg-white hover:text-blue-500 focus-visible:bg-white focus-visible:text-blue-500',
-  actual_button_type == 'secondary' ? 'text-blue-900 bg-white border-blue-900 hover:text-white hover:bg-blue-900 focus-visible:text-white focus-visible:bg-blue-900',
-  actual_button_type == 'tertiary' ? 'text-white bg-emerald-900 border-emerald-900 hover:text-emerald-900 hover:bg-white focus-visible:text-emerald-900 focus-visible:bg-white',
+  'flex flex-row items-center gap-x-4 rounded-full px-6 py-3 text-lg font-display font-semibold border-2 border-brand-primary w-fit transition duration-300',
+  actual_button_type == 'primary' ? 'bg-brand-primary text-white hover:bg-brand-primary-dark hover:border-brand-primary-dark focus-visible:bg-brand-primary-dark focus-visible:border-brand-primary-dark',
+  actual_button_type == 'secondary' ? 'text-brand-primary bg-white hover:bg-brand-primary hover:text-white focus-visible:bg-brand-primary focus-visible:text-white',
+  actual_button_type == 'tertiary' ? 'text-white bg-brand-accent border-brand-accent hover:bg-brand-accent-dark hover:border-brand-accent-dark focus-visible:bg-brand-accent-dark focus-visible:border-brand-accent-dark',
 ] | join(' ') | trim %}
 
 {% set target = open_new_tab ? '_blank' : '_self' %}

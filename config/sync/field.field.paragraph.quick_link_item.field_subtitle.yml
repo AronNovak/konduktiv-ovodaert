@@ -9,7 +9,7 @@ id: paragraph.quick_link_item.field_subtitle
 field_name: field_subtitle
 entity_type: paragraph
 bundle: quick_link_item
-label: Subtitle
+label: Alcím
 description: ''
 required: false
 translatable: true

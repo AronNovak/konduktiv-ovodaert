@@ -9,7 +9,7 @@ id: media.video.field_caption
 field_name: field_caption
 entity_type: media
 bundle: video
-label: Caption
+label: Felirat
 description: ''
 required: false
 translatable: true

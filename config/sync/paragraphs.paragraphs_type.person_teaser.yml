@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: person_teaser
-label: 'Person teaser'
-icon_uuid: null
-icon_default: null
+label: 'Személy ajánló'
+icon_uuid: ~
+icon_default: ~
 description: 'The information of a single person.'
 behavior_plugins: {  }

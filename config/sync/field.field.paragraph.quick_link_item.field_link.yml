@@ -11,7 +11,7 @@ id: paragraph.quick_link_item.field_link
 field_name: field_link
 entity_type: paragraph
 bundle: quick_link_item
-label: Link
+label: Hivatkozás
 description: ''
 required: true
 translatable: true

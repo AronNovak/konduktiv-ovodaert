@@ -1,0 +1,92 @@
+--- a/src/Buffer.php	2025-12-16 10:32:30.000000000 +0100
++++ b/src/Buffer.php	2026-05-08 15:42:23.232198693 +0200
+@@ -31,9 +31,9 @@
+  */
+ class Buffer {
+ 
+-  private const string LAST_SIGNAL_PUSH_TIMESTAMP = 'crowdsec.signal.push.timestamp';
+-  private const string SIGNALS = 'signals';
+-  private const string LOCK = 'crowdsec.signal';
++  private const LAST_SIGNAL_PUSH_TIMESTAMP = 'crowdsec.signal.push.timestamp';
++  private const SIGNALS = 'signals';
++  private const LOCK = 'crowdsec.signal';
+ 
+   /**
+    * The key-value store.
+--- a/src/Client.php	2025-12-16 10:32:30.000000000 +0100
++++ b/src/Client.php	2026-05-08 15:42:23.261413215 +0200
+@@ -26,7 +26,7 @@
+  */
+ class Client {
+ 
+-  public const string CROWDSEC_URL_CTI = 'https://app.crowdsec.net/cti/';
++  public const CROWDSEC_URL_CTI = 'https://app.crowdsec.net/cti/';
+ 
+   /**
+    * The CrowdSec configuration.
+--- a/src/Cti.php	2025-12-16 10:32:30.000000000 +0100
++++ b/src/Cti.php	2026-05-08 15:42:23.293491174 +0200
+@@ -13,7 +13,7 @@
+  */
+ final class Cti implements CtiInterface {
+ 
+-  protected const string API_URL = 'https://cti.api.crowdsec.net/v2/';
++  protected const API_URL = 'https://cti.api.crowdsec.net/v2/';
+ 
+   /**
+    * Constructs a Cti object.
+--- a/src/Event/CrowdSecEvents.php	2025-12-16 10:32:30.000000000 +0100
++++ b/src/Event/CrowdSecEvents.php	2026-05-08 15:42:23.328780669 +0200
+@@ -16,7 +16,7 @@
+    *
+    * @var string
+    */
+-  public const string SCENARIO_LIST_BUILD = 'crowdsec.scenario.list_build';
++  public const SCENARIO_LIST_BUILD = 'crowdsec.scenario.list_build';
+ 
+   /**
+    * Dispatches when the list of signalling scenarios gets build.
+@@ -25,7 +25,7 @@
+    *
+    * @var string
+    */
+-  public const string SIGNAL_SCENARIO_LIST_BUILD = 'crowdsec.signal.scenario.list_build';
++  public const SIGNAL_SCENARIO_LIST_BUILD = 'crowdsec.signal.scenario.list_build';
+ 
+   /**
+    * Dispatches when a request from an ip address was blocked.
+@@ -34,7 +34,7 @@
+    *
+    * @var string
+    */
+-  public const string IP_BLOCKED = 'crowdsec.ip.blocked';
++  public const IP_BLOCKED = 'crowdsec.ip.blocked';
+ 
+   /**
+    * Dispatches when an ip address was banned.
+@@ -43,7 +43,7 @@
+    *
+    * @var string
+    */
+-  public const string IP_BANNED = 'crowdsec.ip.banned';
++  public const IP_BANNED = 'crowdsec.ip.banned';
+ 
+   /**
+    * Dispatches when an ip address was un-banned.
+@@ -52,7 +52,7 @@
+    *
+    * @var string
+    */
+-  public const string IP_UNBANNED = 'crowdsec.ip.unbanned';
++  public const IP_UNBANNED = 'crowdsec.ip.unbanned';
+ 
+   /**
+    * Dispatches when an ip address was signalled upstream.
+@@ -61,6 +61,6 @@
+    *
+    * @var string
+    */
+-  public const string IP_SIGNALLED = 'crowdsec.ip.signalled';
++  public const IP_SIGNALLED = 'crowdsec.ip.signalled';
+ 
+ }

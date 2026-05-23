@@ -17,7 +17,7 @@ id: node.news.field_tags
 field_name: field_tags
 entity_type: node
 bundle: news
-label: Tags
+label: Címkék
 description: ''
 required: false
 translatable: true

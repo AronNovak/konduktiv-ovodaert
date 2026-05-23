@@ -11,7 +11,7 @@ id: paragraph.form.field_description
 field_name: field_description
 entity_type: paragraph
 bundle: form
-label: Description
+label: Leírás
 description: ''
 required: false
 translatable: false

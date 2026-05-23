@@ -11,7 +11,7 @@ id: paragraph.accordion_item.field_body
 field_name: field_body
 entity_type: paragraph
 bundle: accordion_item
-label: Description
+label: Szöveg
 description: ''
 required: true
 translatable: true
