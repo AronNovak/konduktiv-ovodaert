@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: text
 label: Szöveg
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Cím és HTML szöveg.'
 behavior_plugins: {  }

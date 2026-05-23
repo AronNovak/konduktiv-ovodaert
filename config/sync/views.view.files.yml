@@ -8,20 +8,20 @@ dependencies:
 _core:
   default_config_hash: gLmoA0yjvlXfMRp9ihOhRKSSQQlbdLdvpDkbVwkYPrg
 id: files
-label: Files
+label: Fájlok
 module: file
-description: 'Find and manage files.'
+description: 'Fájlok keresése és kezelése.'
 tag: default
 base_table: file_managed
 base_field: fid
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Alapértelmezés
     display_plugin: default
     position: 0
     display_options:
-      title: Files
+      title: Fájlok
       fields:
         fid:
           id: fid
@@ -66,7 +66,7 @@ display:
           entity_type: file
           entity_field: filename
           plugin_id: field
-          label: Name
+          label: Név
           exclude: false
           alter:
             alter_text: false
@@ -129,7 +129,7 @@ display:
           entity_type: file
           entity_field: filemime
           plugin_id: field
-          label: 'MIME type'
+          label: 'MIME típus'
           exclude: false
           alter:
             alter_text: false
@@ -181,7 +181,7 @@ display:
           entity_type: file
           entity_field: filesize
           plugin_id: field
-          label: Size
+          label: Méret
           exclude: false
           alter:
             alter_text: false
@@ -233,7 +233,7 @@ display:
           entity_type: file
           entity_field: status
           plugin_id: field
-          label: Status
+          label: Állapot
           exclude: false
           alter:
             alter_text: false
@@ -277,8 +277,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: Temporary
-            format_custom_true: Permanent
+            format_custom_false: Ideiglenes
+            format_custom_true: Állandó
         created:
           id: created
           table: file_managed
@@ -289,7 +289,7 @@ display:
           entity_type: file
           entity_field: created
           plugin_id: field
-          label: 'Upload date'
+          label: 'Feltöltés dátuma'
           exclude: false
           alter:
             alter_text: false
@@ -354,7 +354,7 @@ display:
           entity_type: file
           entity_field: changed
           plugin_id: field
-          label: 'Changed date'
+          label: 'Módosítás dátuma'
           exclude: false
           alter:
             alter_text: false
@@ -417,7 +417,7 @@ display:
           group_type: sum
           admin_label: ''
           plugin_id: numeric
-          label: 'Used in'
+          label: 'Ez használja'
           exclude: false
           alter:
             alter_text: false
@@ -475,26 +475,26 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: 'Következő ›'
+            previous: '‹ Előző'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elemek száma oldalanként'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '– Mind –'
             offset: false
-            offset_label: Offset
+            offset_label: Eltolás
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Szűrő
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Növ
+          sort_desc_label: Csökk
       access:
         type: perm
         options:
@@ -509,7 +509,7 @@ display:
           field: area_text_custom
           plugin_id: text_custom
           empty: true
-          content: 'No files available.'
+          content: 'Nincsenek elérhető fájlok.'
       sorts: {  }
       arguments: {  }
       filters:
@@ -529,7 +529,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: Filename
+            label: Fájlnév
             description: ''
             use_operator: false
             operator: filename_op
@@ -569,7 +569,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'MIME type'
+            label: 'MIME típus'
             description: ''
             use_operator: false
             operator: filemime_op
@@ -609,7 +609,7 @@ display:
           exposed: true
           expose:
             operator_id: status_op
-            label: Status
+            label: Állapot
             description: ''
             use_operator: false
             operator: status_op
@@ -749,7 +749,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: 'Files overview'
+    display_title: 'Fájlok áttekintése'
     display_plugin: page
     position: 1
     display_options:
@@ -770,7 +770,7 @@ display:
       path: admin/content/files
       menu:
         type: tab
-        title: Files
+        title: Fájlok
         description: ''
         weight: 0
         menu_name: admin
@@ -786,11 +786,11 @@ display:
       tags: {  }
   page_2:
     id: page_2
-    display_title: 'File usage'
+    display_title: 'Fájl használata'
     display_plugin: page
     position: 2
     display_options:
-      title: 'File usage'
+      title: 'Fájl használata'
       fields:
         entity_label:
           id: entity_label
@@ -800,7 +800,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_label
-          label: Entity
+          label: Entitás
           exclude: false
           alter:
             alter_text: false
@@ -850,7 +850,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: 'Entity type'
+          label: Entitástípus
           exclude: false
           alter:
             alter_text: false
@@ -899,7 +899,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: 'Registering module'
+          label: 'Használó modul'
           exclude: false
           alter:
             alter_text: false
@@ -948,7 +948,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: numeric
-          label: 'Use count'
+          label: 'Használatok száma'
           exclude: false
           alter:
             alter_text: false
@@ -1006,16 +1006,16 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: 'Következő ›'
+            previous: '‹ Előző'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elemek száma oldalanként'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '– Mind –'
             offset: false
-            offset_label: Offset
+            offset_label: Eltolás
       empty: {  }
       arguments:
         fid:
@@ -1032,9 +1032,9 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Mind
           title_enable: true
-          title: 'File usage information for {{ arguments.fid }}'
+          title: '{{ arguments.fid }} fájlhasználati információi'
           default_argument_type: fixed
           default_argument_options:
             argument: ''

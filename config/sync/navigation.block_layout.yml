@@ -12,7 +12,7 @@ sections:
         region: content
         configuration:
           id: navigation_shortcuts
-          label: Shortcuts
+          label: Gyorshivatkozások
           label_display: '0'
           provider: navigation
           status: true
@@ -25,7 +25,7 @@ sections:
         region: content
         configuration:
           id: 'navigation_menu:content'
-          label: Content
+          label: Tartalom
           label_display: '0'
           provider: navigation
           level: 1
@@ -37,7 +37,7 @@ sections:
         region: content
         configuration:
           id: 'navigation_menu:admin'
-          label: Administration
+          label: Adminisztráció
           label_display: '0'
           provider: navigation
           level: 2
@@ -49,7 +49,7 @@ sections:
         region: footer
         configuration:
           id: navigation_user
-          label: User
+          label: Felhasználó
           label_display: '0'
           provider: navigation
           status: true

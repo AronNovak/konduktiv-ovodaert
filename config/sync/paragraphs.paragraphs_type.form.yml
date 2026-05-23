@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: form
 label: Űrlap
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Beágyazott webform.'
 behavior_plugins: {  }

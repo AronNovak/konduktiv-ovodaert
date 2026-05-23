@@ -20,6 +20,6 @@ default_value_callback: ''
 settings:
   handler: 'default:webform'
   handler_settings:
-    target_bundles: ~
+    target_bundles: null
     auto_create: false
 field_type: webform

@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: people_teasers
 label: 'Munkatársak ajánlója'
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Show People teasers as a grid of cards.'
 behavior_plugins: {  }

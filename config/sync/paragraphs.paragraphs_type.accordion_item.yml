@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: accordion_item
 label: 'Harmonika elem'
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Egyetlen lenyitható elem a harmonikán belül.'
 behavior_plugins: {  }

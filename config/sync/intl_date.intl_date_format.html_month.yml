@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: g2MMBfdP6rUSEi0yh0xmmcDVre1VrRz9uuZcLDsQlkM
 id: html_month
-label: 'HTML Month'
+label: 'HTML hónap'
 pattern: yyyy-MM

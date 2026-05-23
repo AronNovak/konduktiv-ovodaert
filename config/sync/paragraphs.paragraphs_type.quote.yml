@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: quote
 label: Idézet
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: ''
 behavior_plugins: {  }

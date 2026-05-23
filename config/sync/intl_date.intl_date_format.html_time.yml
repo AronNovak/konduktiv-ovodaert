@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: sQRHwc-ncIh5hEZBMqiabHmFN9xWxrNvzB3ACXxm4mA
 id: html_time
-label: 'HTML Time'
+label: 'HTML idő'
 pattern: 'HH:mm:ss'

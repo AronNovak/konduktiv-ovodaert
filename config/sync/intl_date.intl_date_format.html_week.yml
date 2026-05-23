@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: szyNZPHqfBUUnvMeVq-o1kcXrKabUd29ixIgMRux_Ss
 id: html_week
-label: 'HTML Week'
+label: 'HTML hét'
 pattern: "yyyy-'W'ww"

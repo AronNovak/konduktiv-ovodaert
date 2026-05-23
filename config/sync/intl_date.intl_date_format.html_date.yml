@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: 4_0RlCRAIFGQOqipKmwGbn9yHG1QGQ0cW0Jfi2Db9fY
 id: html_date
-label: 'HTML Date'
+label: 'HTML dátum'
 pattern: yyyy-MM-d

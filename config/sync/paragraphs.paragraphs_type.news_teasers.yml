@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: news_teasers
 label: 'Hírek ajánlója'
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Show News teasers as a grid of cards.'
 behavior_plugins: {  }

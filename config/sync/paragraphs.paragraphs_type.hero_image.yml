@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: hero_image
 label: 'Vezető kép'
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Nagy kép címmel és alcímmel az oldal tetején.'
 behavior_plugins: {  }

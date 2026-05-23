@@ -17,7 +17,7 @@ base_field: id
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Alapértelmezés
     display_plugin: default
     position: 0
     display_options:
@@ -33,7 +33,7 @@ display:
           entity_type: ai_log
           entity_field: bundle
           plugin_id: field
-          label: Type
+          label: Típus
           exclude: false
           alter:
             alter_text: false
@@ -98,7 +98,7 @@ display:
           entity_type: ai_log
           entity_field: created
           plugin_id: field
-          label: Date
+          label: Dátum
           exclude: false
           alter:
             alter_text: false
@@ -367,7 +367,7 @@ display:
           entity_type: ai_log
           entity_field: provider
           plugin_id: field
-          label: Provider
+          label: Szolgáltató
           exclude: false
           alter:
             alter_text: false
@@ -497,7 +497,7 @@ display:
           entity_type: ai_log
           entity_field: tags
           plugin_id: field
-          label: Tags
+          label: Címkék
           exclude: false
           alter:
             alter_text: false
@@ -602,7 +602,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: View
+          text: Megtekintés
           output_url_as_text: false
           absolute: false
         edit_ai_log:
@@ -655,7 +655,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: Edit
+          text: Szerkesztés
           output_url_as_text: false
           absolute: false
         delete_ai_log:
@@ -708,7 +708,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: Delete
+          text: Törlés
           output_url_as_text: false
           absolute: false
         dropbutton:
@@ -719,7 +719,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: dropbutton
-          label: Actions
+          label: Műveletek
           exclude: false
           alter:
             alter_text: false
@@ -784,27 +784,27 @@ display:
           tags:
             next: ››
             previous: ‹‹
-            first: '« First'
-            last: 'Last »'
+            first: '« Első'
+            last: 'Utolsó »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elemek száma oldalanként'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '– Mind –'
             offset: false
-            offset_label: Offset
+            offset_label: Eltolás
           quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Alkalmaz
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Növ
+          sort_desc_label: Csökk
       access:
         type: perm
         options:
@@ -848,7 +848,7 @@ display:
           exposed: true
           expose:
             operator_id: bundle_op
-            label: Type
+            label: Típus
             description: ''
             use_operator: false
             operator: bundle_op
@@ -940,7 +940,7 @@ display:
           exposed: true
           expose:
             operator_id: created_1_op
-            label: To
+            label: Hova
             description: ''
             use_operator: false
             operator: created_1_op
@@ -983,7 +983,7 @@ display:
           exposed: true
           expose:
             operator_id: provider_op
-            label: Provider
+            label: Szolgáltató
             description: ''
             use_operator: false
             operator: provider_op
@@ -1079,7 +1079,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Oldal
     display_plugin: page
     position: 1
     display_options:

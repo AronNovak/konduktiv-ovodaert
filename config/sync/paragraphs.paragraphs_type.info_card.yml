@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: info_card
 label: 'Információs kártya'
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Egyetlen kártya a kártyacsoporton belül.'
 behavior_plugins: {  }

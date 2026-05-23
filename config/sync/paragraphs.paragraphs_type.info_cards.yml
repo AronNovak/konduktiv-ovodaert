@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: info_cards
 label: 'Információs kártyák'
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Több információs kártya rácsban elrendezve.'
 behavior_plugins: {  }

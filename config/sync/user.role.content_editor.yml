@@ -8,20 +8,33 @@ dependencies:
     - workflows.workflow.default
   module:
     - content_moderation
+    - contextual
     - google_tag
+    - media
     - navigation
     - node
+    - paragraphs
+    - server_style_guide
+    - shortcut
     - system
+    - taxonomy
 id: content_editor
 label: 'Content Editor'
 weight: -7
 is_admin: null
 permissions:
   - 'access content overview'
+  - 'access contextual links'
+  - 'access media overview'
   - 'access navigation'
   - 'access style guide'
+  - 'access taxonomy overview'
   - 'administer google_tag_container'
+  - 'administer media'
+  - 'administer menu'
   - 'administer nodes'
+  - 'administer shortcuts'
+  - 'administer taxonomy'
   - 'create landing_page content'
   - 'create news content'
   - 'delete any landing_page content'
@@ -40,3 +53,4 @@ permissions:
   - 'view news revisions'
   - 'view own unpublished content'
   - 'view the administration theme'
+  - 'view unpublished paragraphs'
