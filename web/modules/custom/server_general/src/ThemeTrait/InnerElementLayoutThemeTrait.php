@@ -29,15 +29,20 @@ trait InnerElementLayoutThemeTrait {
    *   The elements as render array.
    * @param \Drupal\server_general\ThemeTrait\Enum\BackgroundColorEnum $bg_color
    *   The background color.
+   * @param bool $center_vertically
+   *   When TRUE, the content is vertically centered inside the (full-height)
+   *   card. Useful for cards that have little content, so it does not stick to
+   *   the top when sibling cards in the same row are taller.
    *
    * @return array
    *   Render array.
    */
-  protected function buildInnerElementLayout(array $items, BackgroundColorEnum $bg_color = BackgroundColorEnum::Transparent): array {
+  protected function buildInnerElementLayout(array $items, BackgroundColorEnum $bg_color = BackgroundColorEnum::Transparent, bool $center_vertically = FALSE): array {
     return [
       '#theme' => 'server_theme_inner_element_layout',
       '#items' => $this->wrapContainerVerticalSpacing($items),
       '#bg_color' => $bg_color->value,
+      '#center_vertically' => $center_vertically,
     ];
   }
 

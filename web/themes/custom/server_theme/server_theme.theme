@@ -225,6 +225,8 @@ function server_theme_theme() {
       'items' => NULL,
       // The background color.
       'bg_color' => NULL,
+      // When TRUE, vertically center the content inside the full-height card.
+      'center_vertically' => FALSE,
     ],
   ];
 
