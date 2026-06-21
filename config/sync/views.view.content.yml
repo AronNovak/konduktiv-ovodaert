@@ -8,20 +8,20 @@ dependencies:
 _core:
   default_config_hash: P7F4DFe8BL31DRVqsvS-ix9KZZqvvaPjZ7zEvGo9yNM
 id: content
-label: Content
+label: Tartalom
 module: node
-description: 'Find and manage content.'
+description: 'Tartalmakat keres és kezel.'
 tag: default
 base_table: node_field_data
 base_field: nid
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Alapértelmezés
     display_plugin: default
     position: 0
     display_options:
-      title: Content
+      title: Tartalom
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -46,7 +46,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Title
+          label: Cím
           exclude: false
           alter:
             alter_text: false
@@ -69,7 +69,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: field
-          label: 'Content type'
+          label: Tartalomtípus
           exclude: false
           alter:
             alter_text: false
@@ -132,7 +132,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Author
+          label: Szerző
           exclude: false
           alter:
             alter_text: false
@@ -150,7 +150,7 @@ display:
           entity_type: node
           entity_field: status
           plugin_id: field
-          label: Status
+          label: Állapot
           exclude: false
           alter:
             alter_text: false
@@ -163,8 +163,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: Unpublished
-            format_custom_true: Published
+            format_custom_false: Rejtett
+            format_custom_true: Közzétéve
         changed:
           id: changed
           table: node_field_data
@@ -172,7 +172,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: field
-          label: Updated
+          label: Frissítve
           exclude: false
           alter:
             alter_text: false
@@ -204,7 +204,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_operations
-          label: Operations
+          label: Műveletek
           exclude: false
           alter:
             alter_text: false
@@ -252,20 +252,20 @@ display:
           pagination_heading_level: h4
           items_per_page: 50
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
+            next: 'Következő ›'
+            previous: '‹ Előző'
+            first: '« Első'
+            last: 'Utolsó »'
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Szűrő
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Növ
+          sort_desc_label: Csökk
       access:
         type: perm
         options:
@@ -279,7 +279,7 @@ display:
           field: area_text_custom
           plugin_id: text_custom
           empty: true
-          content: 'No content available.'
+          content: 'Nincs elérhető tartalom.'
       sorts: {  }
       arguments: {  }
       filters:
@@ -299,7 +299,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: Cím
             description: ''
             use_operator: false
             operator: title_op
@@ -339,7 +339,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: Tartalomtípus
             description: ''
             use_operator: false
             operator: type_op
@@ -380,7 +380,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Status
+            label: Állapot
             description: ''
             use_operator: false
             operator: status_op
@@ -394,7 +394,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: 'Közzététel állapota'
             description: ''
             identifier: status
             optional: true
@@ -405,11 +405,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Közzétéve
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: Rejtett
                 operator: '='
                 value: '0'
         langcode:
@@ -428,7 +428,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Nyelv
             description: ''
             use_operator: false
             operator: langcode_op
@@ -590,7 +590,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Oldal
     display_plugin: page
     position: 1
     display_options:
@@ -598,15 +598,15 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: Tartalom
         description: ''
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: Content
-        description: 'Find and manage content'
+        title: Tartalom
+        description: 'Tartalom keresése és kezelése'
         weight: -10
         menu_name: admin
     cache_metadata:

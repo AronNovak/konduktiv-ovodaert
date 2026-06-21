@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: documents
 label: Dokumentumok
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Letölthető fájlok listája.'
 behavior_plugins: {  }

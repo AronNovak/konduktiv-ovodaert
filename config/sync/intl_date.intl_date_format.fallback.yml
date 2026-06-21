@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: q8ossx0MIrxdFeagr8YvGLP5Z9AzG9EJSH5EFAZCOdI
 id: fallback
-label: 'Fallback date format'
+label: 'Pót dátumformátum'
 pattern: 'eee, MM/dd/yyyy - HH:mm'

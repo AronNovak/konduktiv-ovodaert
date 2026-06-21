@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: J2n0RpFzS0-bgSyxjs6rSdgxB1rb-bTAgqywNx_964M
 name: large
-label: 'Large (480×480)'
+label: 'Nagy (480×480 képpont)'
 effects:
   7d911619-e570-472b-b707-cbd5f27dbc2c:
     uuid: 7d911619-e570-472b-b707-cbd5f27dbc2c

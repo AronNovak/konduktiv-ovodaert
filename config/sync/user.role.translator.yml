@@ -10,18 +10,19 @@ dependencies:
   module:
     - config_translation
     - content_translation
+    - contextual
     - entity_browser
     - locale
-    - media
     - navigation
     - node
+    - server_style_guide
 id: translator
 label: Translator
 weight: -7
 is_admin: null
 permissions:
   - 'access content overview'
-  - 'access media overview'
+  - 'access contextual links'
   - 'access media_entity_browser entity browser pages'
   - 'access media_entity_browser_modal entity browser pages'
   - 'access navigation'

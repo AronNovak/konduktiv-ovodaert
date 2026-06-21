@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: POpMOetWv4m4z-vxjyk6TWndzjJ94l7VlGKWtwCOIRg
 id: short
-label: 'Default short date'
+label: 'Alapértelmezett rövid dátum idővel'
 pattern: 'MM/dd/yyyy - HH:mm'

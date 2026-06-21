@@ -79,7 +79,9 @@ trait InfoCardThemeTrait {
 
     $elements = $this->wrapContainerVerticalSpacing($elements, AlignmentEnum::Center);
 
-    return $this->buildInnerElementLayout($elements, BackgroundColorEnum::LightGray);
+    // Without a header the card has little content, so center it vertically to
+    // avoid it sticking to the top when sibling cards in the row are taller.
+    return $this->buildInnerElementLayout($elements, BackgroundColorEnum::LightGray, $header === '');
   }
 
 }

@@ -15,7 +15,7 @@ display: modal
 display_configuration:
   width: '1070'
   height: '500'
-  link_text: 'Select media'
+  link_text: 'Média kiválasztása'
   auto_open: false
 selection_display: no_display
 selection_display_configuration: {  }
@@ -28,7 +28,7 @@ widgets:
     label: 'Choose existing media'
     weight: -10
     settings:
-      submit_text: 'Select media'
+      submit_text: 'Média kiválasztása'
       auto_select: false
       view: media_entity_browser
       view_display: media_browser_all

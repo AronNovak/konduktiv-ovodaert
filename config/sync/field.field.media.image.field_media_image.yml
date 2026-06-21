@@ -30,9 +30,9 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ~
+    uuid: null
     alt: ''
     title: ''
-    width: ~
-    height: ~
+    width: null
+    height: null
 field_type: image

@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: 1azoz0O5odBhBX4numYXFc1ubzYtZ_GIwbCUrL67IjM
 id: medium
-label: 'Default medium date'
+label: 'Alapértelmezett közepes dátum idővel'
 pattern: 'eee, MM/dd/yyyy - HH:mm'

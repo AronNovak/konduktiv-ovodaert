@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: 8IFoqMJgELPwTUFZYR3wwDWw7xRBpfXVYZ9PKBD94Hc
 id: html_yearless_date
-label: 'HTML Yearless date'
+label: 'HTML dátum évszám nélkül'
 pattern: MM-d

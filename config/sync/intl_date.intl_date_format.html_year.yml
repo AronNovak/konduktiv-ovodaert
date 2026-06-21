@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: XJ6dnLu9ISD0ozY-AN-XxJXvClb5VAfVU-JpLuSnz1M
 id: html_year
-label: 'HTML Year'
+label: 'HTML év'
 pattern: yyyy

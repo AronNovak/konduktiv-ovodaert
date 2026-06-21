@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: search
 label: Keresés
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Show the search filters and results widget.'
 behavior_plugins: {  }

@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: quick_links
 label: 'Gyors hivatkozások'
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Hivatkozások listája rácsban.'
 behavior_plugins: {  }

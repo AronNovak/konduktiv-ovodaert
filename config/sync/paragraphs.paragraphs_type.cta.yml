@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: cta
 label: 'Cselekvésre felhívás'
-icon_uuid: ~
-icon_default: ~
+icon_uuid: null
+icon_default: null
 description: 'Felhívás gombbal és rövid szöveggel.'
 behavior_plugins: {  }
