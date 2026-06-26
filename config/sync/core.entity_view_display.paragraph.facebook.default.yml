@@ -1,0 +1,37 @@
+uuid: 57056abc-58ab-4a2f-a07d-ec9b44a1a597
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.facebook.field_link
+    - field.field.paragraph.facebook.field_title
+    - paragraphs.paragraphs_type.facebook
+  module:
+    - link
+id: paragraph.facebook.default
+targetEntityType: paragraph
+bundle: facebook
+mode: default
+content:
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

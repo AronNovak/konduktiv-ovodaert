@@ -524,3 +524,38 @@ default:
           field_title:
             -
               value: 'Csatlakozzon hozzánk!'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e99b2eac-7f06-444b-aa86-da6d5308340f
+          bundle: facebook
+          default_langcode: hu
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1778143726
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_link:
+            -
+              uri: 'https://www.facebook.com/konduktivovialapitvany/'
+              title: ''
+              options: {  }
+          field_title:
+            -
+              value: 'Kövess minket Facebookon!'
