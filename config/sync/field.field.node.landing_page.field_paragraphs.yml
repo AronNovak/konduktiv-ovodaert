@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.documents
+    - paragraphs.paragraphs_type.facebook
     - paragraphs.paragraphs_type.form
     - paragraphs.paragraphs_type.hero_image
     - paragraphs.paragraphs_type.info_cards
@@ -37,6 +38,7 @@ settings:
       accordion: accordion
       cta: cta
       documents: documents
+      facebook: facebook
       form: form
       hero_image: hero_image
       info_cards: info_cards
@@ -60,6 +62,9 @@ settings:
         enabled: true
       documents:
         weight: -33
+        enabled: true
+      facebook:
+        weight: -18
         enabled: true
       form:
         weight: -32

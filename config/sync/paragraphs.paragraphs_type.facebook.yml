@@ -1,0 +1,10 @@
+uuid: f23f5725-2254-49f4-9f84-bb11f0632e3c
+langcode: en
+status: true
+dependencies: {  }
+id: facebook
+label: 'Facebook oldal'
+icon_uuid: null
+icon_default: null
+description: 'Facebook oldal beágyazása (pl. a kezdőlap aljára).'
+behavior_plugins: {  }
