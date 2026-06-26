@@ -3,11 +3,13 @@
 # Deploy konduktiv-ovodaert to home.pl shared hosting at novaak.net/konduktiv_ovodaert/web.
 #
 # Pre-reqs:
-#   - DDEV project up (`ddev start`); local DB is the source of truth.
 #   - SSH alias 'tarhely' configured for the home.pl account.
 #   - Local composer + rsync.
 #   - composer.json already has the PHP 8.2 platform pin and patches in
 #     composer.patches.json/patches/php-8.2-compat/. Don't deploy without those.
+#
+# Code-only deploy: pushes code + public files + settings.php. The live database
+# is NEVER touched — apply content/config changes on the server (e.g. drush cim).
 #
 # Required env vars:
 #   NOVAAK_DB_PASS      home.pl DB password for 13319505_konduktiv_ovodaert.
@@ -21,7 +23,6 @@
 #   NOVAAK_SSH=tarhely
 #   NOVAAK_TARGET=/home/serwer1365505/public_html/novaak.net/novaak.net/konduktiv_ovodaert
 #   NOVAAK_BUILD_DIR=/tmp/konduktiv-deploy-build
-#   NOVAAK_SKIP_DB=0  (set to 1 to skip exporting/importing the DB)
 
 set -euo pipefail
 
@@ -34,10 +35,8 @@ NOVAAK_DB_HOST="${NOVAAK_DB_HOST:-mysql8}"
 NOVAAK_SSH="${NOVAAK_SSH:-tarhely}"
 NOVAAK_TARGET="${NOVAAK_TARGET:-/home/serwer1365505/public_html/novaak.net/novaak.net/konduktiv_ovodaert}"
 NOVAAK_BUILD_DIR="${NOVAAK_BUILD_DIR:-/tmp/konduktiv-deploy-build}"
-NOVAAK_SKIP_DB="${NOVAAK_SKIP_DB:-0}"
 
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-DB_DUMP="/tmp/konduktiv-db-$$.sql.gz"
 
 echo "==> Project root: $PROJECT_ROOT"
 echo "==> Build dir:    $NOVAAK_BUILD_DIR"
@@ -74,12 +73,8 @@ rsync -a --delete \
 # on PHP 8.2 (home.pl serves 8.2.24 under their "PHP 8.3" panel option).
 ( cd "$NOVAAK_BUILD_DIR" && composer install --no-dev --no-progress --ignore-platform-reqs )
 
-# --- 3. Copy the public files dir + DB dump from local DDEV.
+# --- 3. Copy the public files dir from local.
 rsync -a "$PROJECT_ROOT/web/sites/default/files/" "$NOVAAK_BUILD_DIR/web/sites/default/files/"
-
-if [ "$NOVAAK_SKIP_DB" != "1" ]; then
-  ( cd "$PROJECT_ROOT" && ddev export-db --file="$DB_DUMP" )
-fi
 
 # --- 4. Write production settings.php (no committed creds; built from env).
 cat > "$NOVAAK_BUILD_DIR/web/sites/default/settings.php" <<'PHPEOF'
@@ -118,6 +113,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 $settings['trusted_host_patterns'] = [
   '^novaak\.net$',
   '^www\.novaak\.net$',
+  '^petoovodaert\.hu$',
+  '^www\.petoovodaert\.hu$',
 ];
 
 $settings['config_sync_directory'] = '../config/sync';
@@ -143,15 +140,7 @@ rsync -avz --partial \
   --exclude='/web/modules/contrib/*/tests' \
   "$NOVAAK_BUILD_DIR/" "$NOVAAK_SSH:$NOVAAK_TARGET/"
 
-# --- 6. Import DB + clear caches on the server.
-if [ "$NOVAAK_SKIP_DB" != "1" ]; then
-  echo "==> Uploading DB dump"
-  scp "$DB_DUMP" "$NOVAAK_SSH:$NOVAAK_TARGET/.db-import.sql.gz"
-  echo "==> Importing DB"
-  ssh "$NOVAAK_SSH" "zcat $NOVAAK_TARGET/.db-import.sql.gz | mysql -u $NOVAAK_DB_USER -p'$NOVAAK_DB_PASS' -h $NOVAAK_DB_HOST $NOVAAK_DB_NAME && rm -f $NOVAAK_TARGET/.db-import.sql.gz"
-  rm -f "$DB_DUMP"
-fi
-
+# --- 6. Clear caches on the server.
 echo "==> Clearing Drupal caches on server"
 ssh "$NOVAAK_SSH" "rm -rf $NOVAAK_TARGET/web/sites/default/files/php/twig/* && \
 mysql -u $NOVAAK_DB_USER -p'$NOVAAK_DB_PASS' -h $NOVAAK_DB_HOST $NOVAAK_DB_NAME -e '
