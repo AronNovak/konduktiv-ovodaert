@@ -1,0 +1,19 @@
+uuid: e66fd537-97e2-4dfd-acfa-b8c5c6903efd
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_beneficiary
+    - paragraphs.paragraphs_type.donation_qr
+id: paragraph.donation_qr.field_beneficiary
+field_name: field_beneficiary
+entity_type: paragraph
+bundle: donation_qr
+label: 'Kedvezményezett neve'
+description: 'Az alapítvány hivatalos neve, legfeljebb 70 karakter.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

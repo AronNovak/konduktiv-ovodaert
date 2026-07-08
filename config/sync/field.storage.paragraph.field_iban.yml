@@ -1,0 +1,21 @@
+uuid: 31fbe6d9-af93-49e3-bada-a35ba2090f8d
+langcode: hu
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_iban
+field_name: field_iban
+entity_type: paragraph
+type: string
+settings:
+  max_length: 34
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.documents
+    - paragraphs.paragraphs_type.donation_qr
     - paragraphs.paragraphs_type.facebook
     - paragraphs.paragraphs_type.form
     - paragraphs.paragraphs_type.hero_image
@@ -49,6 +50,7 @@ settings:
       related_content: related_content
       search: search
       text: text
+      donation_qr: donation_qr
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -62,6 +64,9 @@ settings:
         enabled: true
       documents:
         weight: -33
+        enabled: true
+      donation_qr:
+        weight: 0
         enabled: true
       facebook:
         weight: -18

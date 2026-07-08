@@ -1,0 +1,21 @@
+uuid: 5092349c-3e10-444a-b40f-33f713aa8b2f
+langcode: hu
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_beneficiary
+field_name: field_beneficiary
+entity_type: paragraph
+type: string
+settings:
+  max_length: 70
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
