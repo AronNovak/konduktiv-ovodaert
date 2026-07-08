@@ -1,0 +1,25 @@
+uuid: c71d9363-a32d-465e-99bc-4c49d3cf2185
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.donation_qr.field_amount
+    - field.field.paragraph.donation_qr.field_beneficiary
+    - field.field.paragraph.donation_qr.field_bic
+    - field.field.paragraph.donation_qr.field_iban
+    - field.field.paragraph.donation_qr.field_payment_message
+    - field.field.paragraph.donation_qr.field_title
+    - paragraphs.paragraphs_type.donation_qr
+id: paragraph.donation_qr.default
+targetEntityType: paragraph
+bundle: donation_qr
+mode: default
+content: {  }
+hidden:
+  field_amount: true
+  field_beneficiary: true
+  field_bic: true
+  field_iban: true
+  field_payment_message: true
+  field_title: true
+  search_api_excerpt: true

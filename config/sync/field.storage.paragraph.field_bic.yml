@@ -1,0 +1,21 @@
+uuid: f71dbdbc-a7b1-48d0-9618-8a26c0f950a0
+langcode: hu
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_bic
+field_name: field_bic
+entity_type: paragraph
+type: string
+settings:
+  max_length: 11
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

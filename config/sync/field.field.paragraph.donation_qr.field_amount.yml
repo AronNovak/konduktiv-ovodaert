@@ -1,0 +1,23 @@
+uuid: eae794bb-9989-41bb-a5d1-19d79c7b3592
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_amount
+    - paragraphs.paragraphs_type.donation_qr
+id: paragraph.donation_qr.field_amount
+field_name: field_amount
+entity_type: paragraph
+bundle: donation_qr
+label: 'Összeg (Ft)'
+description: 'Üresen hagyva az adományozó maga adja meg az összeget.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

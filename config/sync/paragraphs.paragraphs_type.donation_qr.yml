@@ -1,0 +1,10 @@
+uuid: 0fb3cf55-3d59-4bfb-bcb2-49a5371b1db2
+langcode: hu
+status: true
+dependencies: {  }
+id: donation_qr
+label: 'Adományozás QR-kóddal'
+icon_uuid: null
+icon_default: null
+description: 'Azonnali fizetési (qvik) QR-kód, amelyet banki alkalmazással beolvasva előre kitöltött átutalási űrlap nyílik meg.'
+behavior_plugins: {  }

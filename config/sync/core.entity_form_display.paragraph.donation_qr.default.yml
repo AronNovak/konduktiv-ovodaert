@@ -1,0 +1,67 @@
+uuid: 87f8ce15-a741-42f0-aca0-792dc6f57d64
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.donation_qr.field_amount
+    - field.field.paragraph.donation_qr.field_beneficiary
+    - field.field.paragraph.donation_qr.field_bic
+    - field.field.paragraph.donation_qr.field_iban
+    - field.field.paragraph.donation_qr.field_payment_message
+    - field.field.paragraph.donation_qr.field_title
+    - paragraphs.paragraphs_type.donation_qr
+id: paragraph.donation_qr.default
+targetEntityType: paragraph
+bundle: donation_qr
+mode: default
+content:
+  field_amount:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_beneficiary:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bic:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_iban:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_payment_message:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

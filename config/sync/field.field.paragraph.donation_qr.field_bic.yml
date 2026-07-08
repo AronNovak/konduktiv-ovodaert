@@ -1,0 +1,19 @@
+uuid: 2316fa4a-3efe-4a0d-8101-471765950321
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bic
+    - paragraphs.paragraphs_type.donation_qr
+id: paragraph.donation_qr.field_bic
+field_name: field_bic
+entity_type: paragraph
+bundle: donation_qr
+label: 'BIC (SWIFT) kód'
+description: 'A kedvezményezett bank 8 vagy 11 karakteres BIC kódja.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

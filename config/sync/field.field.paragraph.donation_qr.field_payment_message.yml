@@ -1,0 +1,19 @@
+uuid: be0aeb58-f2e5-4075-a50b-acfe762a89da
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_payment_message
+    - paragraphs.paragraphs_type.donation_qr
+id: paragraph.donation_qr.field_payment_message
+field_name: field_payment_message
+entity_type: paragraph
+bundle: donation_qr
+label: Közlemény
+description: 'Az átutalás közleménye, legfeljebb 70 karakter.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

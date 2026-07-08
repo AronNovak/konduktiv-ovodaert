@@ -1,0 +1,19 @@
+uuid: 7b24567b-110e-49fa-bb00-5b545f745225
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_iban
+    - paragraphs.paragraphs_type.donation_qr
+id: paragraph.donation_qr.field_iban
+field_name: field_iban
+entity_type: paragraph
+bundle: donation_qr
+label: 'IBAN számlaszám'
+description: 'HU-val kezdődő, 28 karakteres IBAN, szóközök nélkül is megadható.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
