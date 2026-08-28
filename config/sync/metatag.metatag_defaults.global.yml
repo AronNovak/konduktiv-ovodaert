@@ -8,9 +8,14 @@ id: global
 label: Általános
 tags:
   canonical_url: '[current-page:url]'
-  description: 'This is the Drupal Starter project.'
-  og_title: '[node:title]'
-  schema_organization_description: 'A brief description of the organisation and its purpose.'
+  description: 'A Semmelweis Egyetem Pető András Gyakorló Óvodájába járó mozgáskorlátozott gyermekeket támogatjuk közösségi programokkal, fejlesztő eszközökkel és játékokkal.'
+  og_description: 'A Semmelweis Egyetem Pető András Gyakorló Óvodájába járó mozgáskorlátozott gyermekeket támogatjuk közösségi programokkal, fejlesztő eszközökkel és játékokkal.'
+  og_image: '[site:url]themes/custom/server_theme/dist/images/social-share.jpg'
+  og_site_name: '[site:name]'
+  og_title: '[current-page:title]'
+  og_type: website
+  og_url: '[current-page:url]'
+  schema_organization_description: 'Alapítványunk a Semmelweis Egyetem Pető András Gyakorló Óvodájába járó sajátos nevelési igényű gyermekek élmény- és tapasztalatszerzését, valamint a konduktív pedagógiai munkát támogatja.'
   schema_organization_name: '[site:name]'
   schema_organization_type: Organization
   schema_organization_url: '[site:url]'
