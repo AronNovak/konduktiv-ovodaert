@@ -1,0 +1,19 @@
+uuid: 6fd63b0a-e840-4bed-8607-54439ef362e3
+langcode: hu
+status: true
+dependencies:
+  config:
+    - config_pages.type.footer
+    - field.storage.config_pages.field_bank_account
+id: config_pages.footer.field_bank_account
+field_name: field_bank_account
+entity_type: config_pages
+bundle: footer
+label: Bankszámlaszám
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
