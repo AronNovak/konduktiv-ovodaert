@@ -1,0 +1,18 @@
+uuid: f3d39530-0eda-4d01-a3e2-44dd20f2d971
+langcode: hu
+status: true
+dependencies:
+  module:
+    - config_pages
+id: config_pages.field_email
+field_name: field_email
+entity_type: config_pages
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

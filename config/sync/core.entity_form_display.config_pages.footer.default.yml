@@ -1,0 +1,69 @@
+uuid: 496a8330-c5fd-4178-84b4-3ffb150fb1ee
+langcode: hu
+status: true
+dependencies:
+  config:
+    - config_pages.type.footer
+    - field.field.config_pages.footer.field_address
+    - field.field.config_pages.footer.field_bank_account
+    - field.field.config_pages.footer.field_bank_name
+    - field.field.config_pages.footer.field_email
+    - field.field.config_pages.footer.field_facebook_url
+    - field.field.config_pages.footer.field_tax_number
+  module:
+    - link
+id: config_pages.footer.default
+targetEntityType: config_pages
+bundle: footer
+mode: default
+content:
+  field_address:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bank_account:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bank_name:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_facebook_url:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_tax_number:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  label: true

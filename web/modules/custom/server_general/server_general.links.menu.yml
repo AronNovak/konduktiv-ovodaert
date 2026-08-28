@@ -1,0 +1,5 @@
+config_pages.footer:
+  title: 'Lábléc'
+  description: 'Az oldal láblécében megjelenő elérhetőségek.'
+  route_name: config_pages.footer
+  parent: system.admin_config_system

@@ -1,0 +1,17 @@
+uuid: 7585ec98-8be6-4fcc-ae94-2f0809e661ca
+langcode: hu
+status: true
+dependencies: {  }
+id: footer
+label: Lábléc
+token: false
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: /admin/config/system/footer
+  weight: 0
+  description: 'Az oldal láblécében megjelenő elérhetőségek.'

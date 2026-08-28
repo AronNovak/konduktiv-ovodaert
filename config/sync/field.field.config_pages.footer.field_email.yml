@@ -1,0 +1,19 @@
+uuid: 4e1ddf5b-74f4-4e11-b2b1-fa9a4fa6f93f
+langcode: hu
+status: true
+dependencies:
+  config:
+    - config_pages.type.footer
+    - field.storage.config_pages.field_email
+id: config_pages.footer.field_email
+field_name: field_email
+entity_type: config_pages
+bundle: footer
+label: 'E-mail cím'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
