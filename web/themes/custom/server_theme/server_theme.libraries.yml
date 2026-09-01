@@ -29,31 +29,14 @@ view-more:
     - core/drupal
     - core/once
 
-roboto:
+# Both families in a single request; each extra stylesheet is another
+# render-blocking round trip to fonts.googleapis.com.
+fonts:
   css:
     base:
-      '//fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap':
+      '//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600;700&display=swap':
         external: true
         minified: true
-
-opensans:
-  css:
-    base:
-      '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap':
-        external: true
-        minified: true
-
-quicksand:
-  css:
-    base:
-      '//fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap':
-        external: true
-        minified: true
-
-font-awesome:
-  css:
-    theme:
-      /libraries/font-awesome/css/all.min.css: {}
 
 slick:
   remote: https://github.com/kenwheeler/slick

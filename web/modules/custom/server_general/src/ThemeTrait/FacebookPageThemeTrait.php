@@ -49,6 +49,10 @@ trait FacebookPageThemeTrait {
         // Tailwind classes.
         'style' => 'border:none;overflow:hidden;display:block;margin:0 auto;width:100%;max-width:500px;',
         'scrolling' => 'no',
+        // The timeline pulls several hundred KB of images from Facebook's CDN.
+        // It sits well below the fold, so defer it rather than let it compete
+        // with the page's own assets during load.
+        'loading' => 'lazy',
         'frameborder' => '0',
         'allowfullscreen' => 'true',
         'allow' => 'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share',

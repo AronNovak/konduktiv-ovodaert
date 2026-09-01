@@ -697,21 +697,27 @@ function _server_theme_extract_menu_level(array $tree) {
 }
 
 /**
- * Implements template_preprocess_image_style().
+ * Implements hook_page_attachments_alter().
  *
- * Lighthouse penalizes lazy loaded images that appear above the fold.
- * So, for mobile styles, we don't use lazy.
- *
- * @see https://www.drupal.org/node/3173719#comment-14891412
+ * The font CSS lives on fonts.googleapis.com but the font files it points at
+ * live on fonts.gstatic.com, which the browser only discovers after that CSS
+ * has parsed. Warming both connections up front removes a DNS + TLS round trip
+ * from the critical path.
  */
-function server_theme_preprocess_image_style(array &$variables) {
-  $eager_styles = [
-    'hero_mobile_1x',
-    'hero_mobile_2x',
+function server_theme_page_attachments_alter(array &$attachments) {
+  $origins = [
+    'https://fonts.googleapis.com',
+    'https://fonts.gstatic.com',
   ];
 
-  if (in_array($variables['style_name'], $eager_styles, TRUE)) {
-    $variables['image']['#attributes']['loading'] = 'eager';
+  foreach ($origins as $origin) {
+    $attachments['#attached']['html_head_link'][] = [
+      [
+        'rel' => 'preconnect',
+        'href' => $origin,
+        'crossorigin' => 'anonymous',
+      ],
+    ];
   }
 }
 
