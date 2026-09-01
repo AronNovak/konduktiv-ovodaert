@@ -9,8 +9,9 @@
 
     {# Both logos linked to the homepage. The foundation logo image already contains the name. #}
     <a href="{{ path('<front>') }}" class="flex items-center gap-3 md:gap-5 shrink-0" id="main-logo" aria-label="{{ site_name }}">
-      <img src="{{ file_url(directory ~ '/dist/images/logo-foundation.png') }}" alt="{{ site_name }}" class="h-12 md:h-16 w-auto">
-      <img src="{{ file_url(directory ~ '/dist/images/logo-petoovi.png') }}" alt="{{ 'Pető ovi'|t }}" class="hidden sm:block h-10 md:h-14 w-auto">
+      <img src="{{ file_url(directory ~ '/dist/images/logo-foundation.png') }}" alt="{{ site_name }}" width="400" height="130" class="h-12 md:h-16 w-auto">
+      {# Hidden below sm; loading="lazy" keeps the browser from fetching it on phones, where it never renders. #}
+      <img src="{{ file_url(directory ~ '/dist/images/logo-petoovi.png') }}" alt="{{ 'Pető ovi'|t }}" width="400" height="164" loading="lazy" class="hidden sm:block h-10 md:h-14 w-auto">
     </a>
 
     {# Desktop horizontal nav. The mobile/burger overlay still renders via page.primary_menu. #}
@@ -21,7 +22,9 @@
     <div class="ms-auto lg:ms-0 flex items-center gap-3">
       {# Facebook link, like the source Wix site. #}
       <a href="https://www.facebook.com/konduktivovialapitvany/" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook" class="flex items-center justify-center w-10 h-10 rounded-full bg-brand-primary text-white hover:bg-brand-primary-dark focus-visible:bg-brand-primary-dark transition-colors duration-200">
-        <i class="fab fa-facebook-f text-lg" aria-hidden="true"></i>
+        <svg width="20" height="20" viewBox="0 0 320 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+        </svg>
       </a>
 
       {# Burger menu only on screens below lg (where the inline menu is hidden). #}

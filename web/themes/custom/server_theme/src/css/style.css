@@ -30,6 +30,7 @@
 @source "../../../../../modules/custom/*/js/**/*.js";
 
 @import "./container.css";
+@import "./fonts.css";
 @import "./form.css";
 @import "./hidden.module.css";
 @import "./language.css";

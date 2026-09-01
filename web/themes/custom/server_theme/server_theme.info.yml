@@ -7,10 +7,6 @@ libraries:
   - core/drupal.message
   - server_theme/global-styling
   - server_theme/global-scripts
-  - server_theme/font-awesome
-  - server_theme/opensans
-  - server_theme/quicksand
-  - server_theme/roboto
 
 logo: logo.png
 
