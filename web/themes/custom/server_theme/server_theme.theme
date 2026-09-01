@@ -697,31 +697,6 @@ function _server_theme_extract_menu_level(array $tree) {
 }
 
 /**
- * Implements hook_page_attachments_alter().
- *
- * The font CSS lives on fonts.googleapis.com but the font files it points at
- * live on fonts.gstatic.com, which the browser only discovers after that CSS
- * has parsed. Warming both connections up front removes a DNS + TLS round trip
- * from the critical path.
- */
-function server_theme_page_attachments_alter(array &$attachments) {
-  $origins = [
-    'https://fonts.googleapis.com',
-    'https://fonts.gstatic.com',
-  ];
-
-  foreach ($origins as $origin) {
-    $attachments['#attached']['html_head_link'][] = [
-      [
-        'rel' => 'preconnect',
-        'href' => $origin,
-        'crossorigin' => 'anonymous',
-      ],
-    ];
-  }
-}
-
-/**
  * Build a flat list of top-level main menu items for the desktop header bar.
  *
  * Renders a simple horizontal nav inline alongside the logo on lg+ screens,

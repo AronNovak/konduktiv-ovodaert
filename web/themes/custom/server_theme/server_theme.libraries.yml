@@ -29,15 +29,6 @@ view-more:
     - core/drupal
     - core/once
 
-# Both families in a single request; each extra stylesheet is another
-# render-blocking round trip to fonts.googleapis.com.
-fonts:
-  css:
-    base:
-      '//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600;700&display=swap':
-        external: true
-        minified: true
-
 slick:
   remote: https://github.com/kenwheeler/slick
   version: 1.8.0
