@@ -42,6 +42,17 @@ h1, h2, h3, h4, h5, h6,
     @apply my-0;
   }
 
+  /* Media aligned from the editor's media toolbar. Core's align.module.css
+     moves the media wrapper, but that wrapper is full width here, so the
+     fit-width box around the image is what actually has to move. */
+  .align-center figure > div {
+    @apply mx-auto;
+  }
+
+  .align-right figure > div {
+    @apply ms-auto;
+  }
+
   /* Text alignment set from the editor's alignment toolbar. */
   .text-align-left {
     @apply text-left;

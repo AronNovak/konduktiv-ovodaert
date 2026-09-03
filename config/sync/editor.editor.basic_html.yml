@@ -65,7 +65,7 @@ settings:
         - '<h4 id>'
         - '<h5 id>'
         - '<h6 id>'
-        - '<drupal-media data-align data-caption title>'
+        - '<drupal-media title>'
     media_media:
       allow_view_mode_override: false
 image_upload:
