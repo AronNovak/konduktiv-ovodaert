@@ -22,12 +22,19 @@ settings:
       - blockQuote
       - drupalMedia
       - '|'
+      - alignment
+      - '|'
       - heading
       - '|'
       - sourceEditing
       - '|'
       - code
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
     ckeditor5_heading:
       enabled_headings:
         - heading2

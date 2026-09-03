@@ -42,6 +42,19 @@ h1, h2, h3, h4, h5, h6,
     @apply my-0;
   }
 
+  /* Text alignment set from the editor's alignment toolbar. */
+  .text-align-left {
+    @apply text-left;
+  }
+
+  .text-align-center {
+    @apply text-center;
+  }
+
+  .text-align-right {
+    @apply text-right;
+  }
+
   /* Styling for text elements. */
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold;
