@@ -37,7 +37,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span> <img src alt data-entity-type data-entity-uuid data-align data-caption width height> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title> <a hreflang href> <blockquote cite> <ul type> <ol type start> <drupal-media data-align data-caption title data-entity-type data-entity-uuid alt> <strong> <em> <code> <li>'
+      allowed_html: '<br> <p class="text-align-left text-align-center text-align-right"> <h2 id class="text-align-left text-align-center text-align-right"> <h3 id class="text-align-left text-align-center text-align-right"> <h4 id class="text-align-left text-align-center text-align-right"> <h5 id class="text-align-left text-align-center text-align-right"> <h6 id class="text-align-left text-align-center text-align-right"> <cite> <dl> <dt> <dd> <span> <img src alt data-entity-type data-entity-uuid data-align data-caption width height> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title> <a hreflang href> <blockquote cite> <ul type> <ol type start> <drupal-media data-align data-caption title data-entity-type data-entity-uuid alt> <strong> <em> <code> <li>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_html_image_secure:
